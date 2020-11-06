@@ -37,6 +37,10 @@ function f3()
     {
         document.getElementById("fun3").style.display="none";
     }
+    else if(c==5)
+    {
+\       f5();
+    }
     else
     {
         c--;
@@ -77,4 +81,13 @@ function f5()
         c--;
         alert("You Clicked on the Wrong Apparatus, Please refresh to avoid potential glitches");
     }
+}
+
+function f5()
+{
+    document.getElementById("fun5").style.display="none";
+    setTimeout(function(){
+        document.getElementById("KMnO4_in_cuvette").style.display="block";
+        document.getElementById("KMnO4_in_dropper").style.display="block";
+    }, (1500))
 }
