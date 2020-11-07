@@ -18,6 +18,10 @@ function f1()
     {
         f17();
     }
+    else if (c==25)
+    {
+        f25();
+    }
     else
     {
         c--;
@@ -77,6 +81,14 @@ function f3()
     else if (c==19)
     {
         f19();
+    }
+    else if(c==21)
+    {
+        f21();
+    }
+    else if (c==23)
+    {
+        f23();
     }
     else
     {
@@ -140,6 +152,10 @@ function f6()
     {
         f14();
     }
+    else if (c==22)
+    {
+        f22();
+    }
     else
     {
         c--;
@@ -186,6 +202,10 @@ function f8()
     else if (c==16)
     {
         f16();
+    }
+    else if(c==24)
+    {
+        f24();
     }
     else
     {
@@ -327,6 +347,81 @@ function f20()
     }, (1500))
 }
 
+function f21()
+{
+    document.getElementById("fun21").style.display="none";
+    setTimeout(function(){
+        document.getElementById("KMnO4_in_cuvette").style.display="block";
+        document.getElementById("KMnO4_in_dropper").style.display="none";
+    }, (1500))
+}
+
+function f22()
+{
+    document.getElementById("fun22").style.display="none";
+    setTimeout(function(){
+        document.getElementById("cuvette1").style.display="none";
+        document.getElementById("water_in_cuvette").style.display="none";
+        document.getElementById("close").style.display="block";
+        document.getElementById("close2").style.display="block";
+        document.getElementById("close3").style.display="block";
+        document.getElementById("close7").style.display="block";
+        document.getElementById("close6").style.display="block";
+        document.getElementById("close4").style.display="block";
+    }, (1500))
+}
+
+function f23()
+{
+    document.getElementById("fun23").style.display="none";
+    setTimeout(function(){
+        document.getElementById("cuvette2").style.display="none";
+        document.getElementById("KMnO4_in_cuvette").style.display="none";
+        document.getElementById("close5").style.display="block";
+        document.getElementById("KMnO4_in_specto").style.display="block";
+    }, (1500))
+}
+
+function f24()
+{
+    wavelength=510;
+    document.getElementById("fun24").style.display="none";
+    var A =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,45,55,56,57,78,79,90,91]
+    setInterval(function(){
+        absorbance = A[wavelength-510];
+        y1= wavelength;
+        x1 = absorbance;
+        if(wavelength<=540)
+        {   
+            document.getElementById("Pisplay1").innerHTML = wavelength;
+            document.getElementById("Pisplay2").innerHTML = absorbance;
+            wavelength+=1;
+        }
+    }, (700))
+    g1();
+}
+
+function f25()
+{
+    document.getElementById("close4").style.display="none";
+    document.getElementById("close5").style.display="none";
+    document.getElementById("close").style.display="none";
+    document.getElementById("close2").style.display="none";
+    document.getElementById("close3").style.display="none";
+    document.getElementById("close7").style.display="none";
+    document.getElementById("close6").style.display="none";
+    document.getElementById("KMnO4_in_specto").style.display="none";
+    document.getElementById("Pisplay1").innerHTML = "";
+    document.getElementById("Pisplay1").innerHTML = "";
+    document.getElementById("cuvette1").style.display="block";
+    document.getElementById("water_in_cuvette").style.display="block";
+    document.getElementById("cuvette2").style.display="block";
+    document.getElementById("KMnO4_in_cuvette").style.display="block";
+    document.getElementById("fun25").style.display="none";
+    setTimeout(function(){
+        document.getElementById("KMnO4_in_cuvette").style.display="none";
+    }, (1500))
+}
 
 function g1() {
 
