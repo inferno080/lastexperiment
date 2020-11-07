@@ -26,6 +26,10 @@ function f1()
     {
         f33();
     }
+    else if(c==41)
+    {
+        f41();
+    }
     else
     {
         c--;
@@ -231,7 +235,6 @@ function f8()
     c++;
     if(c==8)
     {   
-        document.getElementById("fun8").style.display="none";
         var A =[11,21,31,41,51,61,17,18,19,110,111,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
         setInterval(function(){
             absorbance = A[wavelength-510];
@@ -242,6 +245,10 @@ function f8()
                 document.getElementById("Pisplay1").innerHTML = wavelength;
                 document.getElementById("Pisplay2").innerHTML = absorbance;
                 wavelength+=1;
+            }
+            if(wavelength==540)
+            {
+                document.getElementById("fun8").style.display="none";
             }
         }, (700))
         g1();
@@ -351,7 +358,6 @@ function f15()
 function f16()
 {     
     wavelength=510;
-    document.getElementById("fun16").style.display="none";
     var A =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
     setInterval(function(){
         absorbance = A[wavelength-510];
@@ -362,6 +368,10 @@ function f16()
             document.getElementById("Pisplay1").innerHTML = wavelength;
             document.getElementById("Pisplay2").innerHTML = absorbance;
             wavelength+=1;
+        }
+        if(wavelength==540)
+        {
+            document.getElementById("fun16").style.display="none";
         }
     }, (700))
     g1();
@@ -378,7 +388,7 @@ function f17()
     document.getElementById("close6").style.display="none";
     document.getElementById("KMnO4_in_specto").style.display="none";
     document.getElementById("Pisplay1").innerHTML = "";
-    document.getElementById("Pisplay1").innerHTML = "";
+    document.getElementById("Pisplay2").innerHTML = "";
     document.getElementById("cuvette1").style.display="block";
     document.getElementById("water_in_cuvette").style.display="block";
     document.getElementById("cuvette2").style.display="block";
@@ -445,7 +455,6 @@ function f23()
 function f24()
 {
     wavelength=510;
-    document.getElementById("fun24").style.display="none";
     var A =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,45,55,56,57,78,79,90,91]
     setInterval(function(){
         absorbance = A[wavelength-510];
@@ -456,6 +465,11 @@ function f24()
             document.getElementById("Pisplay1").innerHTML = wavelength;
             document.getElementById("Pisplay2").innerHTML = absorbance;
             wavelength+=1;
+
+        }
+        if(wavelength==537)
+        {
+            document.getElementById("fun24").style.display="none";
         }
     }, (700))
     g1();
@@ -472,7 +486,7 @@ function f25()
     document.getElementById("close6").style.display="none";
     document.getElementById("KMnO4_in_specto").style.display="none";
     document.getElementById("Pisplay1").innerHTML = "";
-    document.getElementById("Pisplay1").innerHTML = "";
+    document.getElementById("Pisplay2").innerHTML = "";
     document.getElementById("cuvette1").style.display="block";
     document.getElementById("water_in_cuvette").style.display="block";
     document.getElementById("cuvette2").style.display="block";
@@ -536,7 +550,7 @@ function f31()
 function f32()
 {   
     wavelength = 510;
-    document.getElementById("fun32").style.display="none";
+    
     var A =[110,121,131,141,151,161,117,118,119,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,206,207,28,29,30,31]
     setInterval(function(){
         absorbance = A[wavelength-510];
@@ -547,6 +561,10 @@ function f32()
             document.getElementById("Pisplay1").innerHTML = wavelength;
             document.getElementById("Pisplay2").innerHTML = absorbance;
             wavelength+=1;
+        }
+        if(wavelength>535)
+        {
+            document.getElementById("fun32").style.display="none";
         }
     }, (700))
     g1();
@@ -623,7 +641,6 @@ function f39()
 }
 function f40()
 {
-    document.getElementById("fun40").style.display="none";
     wavelength = 510;
     var A =[11,21,31,41,51,61,17,18,19,110,111,12,13,300,505,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
     setInterval(function(){
@@ -636,17 +653,54 @@ function f40()
             document.getElementById("Pisplay2").innerHTML = absorbance;
             wavelength+=1;
         }
+        if(wavelength>535)
+        {
+            document.getElementById("fun40").style.display="none";
+        }
     }, (700))
     g1();
 }
 
 function f41()
 {
+    document.getElementById("close4").style.display="none";
+    document.getElementById("close5").style.display="none";
+    document.getElementById("close").style.display="none";
+    document.getElementById("close2").style.display="none";
+    document.getElementById("close3").style.display="none";
+    document.getElementById("close7").style.display="none";
+    document.getElementById("close6").style.display="none";
+    document.getElementById("KMnO4_in_specto").style.display="none";
+    document.getElementById("Pisplay1").innerHTML = "";
+    document.getElementById("Pisplay2").innerHTML = "";
+    document.getElementById("cuvette1").style.display="block";
+    document.getElementById("water_in_cuvette").style.display="block";
+    document.getElementById("cuvette2").style.display="block";
+    document.getElementById("KMnO4_in_cuvette").style.display="block";
+    document.getElementById("fun41").style.display="none";
+    setTimeout(function(){
+        document.getElementById("KMnO4_in_cuvette").style.display="none";
+    }, (1500))
+}
+
+function f42()
+{
     c+=1;
-    if(c==41)
+    if(c==42)
     {
         g2();
+        document.getElementById("fun42").style.display="none";
     }
+    if(c==43)
+    {
+        f43();
+        document.getElementById("fun43").style.display="none";
+    }
+}
+
+function f43()
+{
+    g3();
 }
 
 function g1() {
@@ -938,5 +992,45 @@ function g2()
     }
     
     
+}
+
+function g3()
+{
+    var dps = []; // dataPoints
+    var chart = new CanvasJS.Chart("chartContainer", {
+        title :{
+            text: "Absorbance vs Concentration"
+        },
+        data: [{
+            type: "line",
+            dataPoints: dps
+        }]
+    });
+    //var op= 0;
+    var xVal = 0.001;
+    var yVal = 0.001; 
+    var updateInterval = 700;
+    var dataLength = 31; // number of dataPoints visible at any point
+    
+    var updateChart = function (count) {
+    
+        count = count || 1;
+    
+        for (var j = 0; j <5; j++) {
+            yVal +=1;
+            xVal +=1;
+             dps.push({
+                    x: xVal,
+                    y: yVal
+                });
+        }
+    
+        if (dps.length > dataLength) {
+            dps.shift();
+        }
+        chart.render();
+    };
+        updateChart(dataLength);
+        setInterval(function(){updateChart()}, updateInterval);
 }
     
