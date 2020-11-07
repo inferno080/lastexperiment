@@ -639,6 +639,16 @@ function f40()
     }, (700))
     g1();
 }
+
+function f41()
+{
+    c+=1;
+    if(c==41)
+    {
+        g2();
+    }
+}
+
 function g1() {
 
     var dps = []; // dataPoints
@@ -679,4 +689,254 @@ function g1() {
         setInterval(function(){updateChart()}, updateInterval);
     }
 
+function g2()
+{
+    var chart = new CanvasJS.Chart("chartContainer", {
+        title: {
+            text: "Comaparison between samples of different concentrations",
+            fontSize: 10
+        },
+        legend:{
+            fontSize: 7,
+           },
+     /*   axisX: {
+            valueFormatString: "MMM YYYY"
+        },
+        axisY2: {
+            title: "Median List Price",
+            prefix: "$",
+            suffix: "K"
+        },
+        toolTip: {
+            shared: true
+        },
+        legend: {
+            cursor: "pointer",
+            verticalAlign: "top",
+            horizontalAlign: "center",
+            dockInsidePlotArea: true,
+            itemclick: toogleDataSeries
+        },
+    */
+        data: [{
+            type:"line",
+            //axisYType: "secondary",
+            name: "Sample 1",
+            showInLegend: true,
+            markerSize: 0,
+            //yValueFormatString: "$#,###k",
+            dataPoints: [		
+               {x: 510 , y:30},
+               {x: 511 , y:30},
+               {x: 512 , y:30},
+               {x: 513 , y:30},
+               {x: 514, y:30},
+               {x: 515 , y:30},
+               {x: 516 , y:30},
+               {x: 517 , y:30},
+               {x: 518 , y:30},
+               {x: 519 , y:30},
+               {x: 520 , y:30},
+               {x: 521 , y:30},
+               {x: 522 , y:30},
+               {x: 523, y:30},
+               {x: 524, y:30},
+               {x: 525 , y:30},
+               {x: 526, y:30},
+               {x: 527, y:30},
+               {x: 528, y:30},
+               {x: 529 , y:30},
+               {x: 530 , y:30},
+               {x: 531 , y:30},
+               {x: 532, y:30},
+               {x: 533, y:30},
+               {x: 534, y:30},
+               {x: 535 , y:30},
+               {x: 536, y:30},
+               {x: 537, y:30},
+               {x: 538, y:30},
+               {x: 539 , y:30},
+               {x: 540, y:30},
+
+            ]
+        },
+        {
+            type: "line",
+            //axisYType: "secondary",
+            name: "Sample2",
+            showInLegend: true,
+            markerSize: 0,
+            //yValueFormatString: "$#,###k",
+            dataPoints: [
+                {x: 510 , y:30},
+                {x: 511 , y:30},
+                {x: 512 , y:78},
+                {x: 513 , y:30},
+                {x: 514, y:90},
+                {x: 515 , y:30},
+                {x: 516 , y:30},
+                {x: 517 , y:30},
+                {x: 518 , y:30},
+                {x: 519 , y:30},
+                {x: 520 , y:30},
+                {x: 521 , y:30},
+                {x: 522 , y:30},
+                {x: 523, y:30},
+                {x: 524, y:77},
+                {x: 525 , y:30},
+                {x: 526, y:30},
+                {x: 527, y:30},
+                {x: 528, y:30},
+                {x: 529 , y:30},
+                {x: 530 , y:30},
+                {x: 531 , y:30},
+                {x: 532, y:30},
+                {x: 533, y:30},
+                {x: 534, y:30},
+                {x: 535 , y:30},
+                {x: 536, y:30},
+                {x: 537, y:30},
+                {x: 538, y:30},
+                {x: 539 , y:30},
+                {x: 540, y:30},
+            ]
+        },
+        {
+            type: "line",
+            //axisYType: "secondary",
+            name: "Sample 3",
+            showInLegend: true,
+            markerSize: 0,
+            //yValueFormatString: "$#,###k",
+            dataPoints: [
+                {x: 510 , y:30},
+                {x: 511 , y:30},
+                {x: 512 , y:30},
+                {x: 513 , y:30},
+                {x: 514, y:30},
+                {x: 515 , y:30},
+                {x: 516 , y:30},
+                {x: 517 , y:30},
+                {x: 518 , y:30},
+                {x: 519 , y:30},
+                {x: 520 , y:30},
+                {x: 521 , y:30},
+                {x: 522 , y:30},
+                {x: 523, y:30},
+                {x: 524, y:30},
+                {x: 525 , y:80},
+                {x: 526, y:30},
+                {x: 527, y:30},
+                {x: 528, y:30},
+                {x: 529 , y:30},
+                {x: 530 , y:30},
+                {x: 531 , y:30},
+                {x: 532, y:65},
+                {x: 533, y:30},
+                {x: 534, y:30},
+                {x: 535 , y:30},
+                {x: 536, y:30},
+                {x: 537, y:30},
+                {x: 538, y:30},
+                {x: 539 , y:32},
+                {x: 540, y:30},
+            ]
+        },
+        {
+            type: "line",
+            //axisYType: "secondary",
+            name: "Sample4",
+            showInLegend: true,
+            markerSize: 0,
+            yValueFormatString: "$#,###k",
+            dataPoints: [
+                {x: 510 , y:30},
+                {x: 511 , y:30},
+                {x: 512 , y:78},
+                {x: 513 , y:30},
+                {x: 514, y:90},
+                {x: 515 , y:30},
+                {x: 516 , y:30},
+                {x: 517 , y:30},
+                {x: 518 , y:30},
+                {x: 519 , y:30},
+                {x: 520 , y:30},
+                {x: 521 , y:30},
+                {x: 522 , y:30},
+                {x: 523, y:30},
+                {x: 524, y:77},
+                {x: 525 , y:30},
+                {x: 526, y:30},
+                {x: 527, y:30},
+                {x: 528, y:30},
+                {x: 529 , y:30},
+                {x: 530 , y:30},
+                {x: 531 , y:300},
+                {x: 532, y:30},
+                {x: 533, y:30},
+                {x: 534, y:30},
+                {x: 535 , y:30},
+                {x: 536, y:30},
+                {x: 537, y:30},
+                {x: 538, y:30},
+                {x: 539 , y:30},
+                {x: 540, y:30},
+            ]
+        },
+        {
+            type: "line",
+            //axisYType: "secondary",
+            name: "Sample5",
+            showInLegend: true,
+            markerSize: 0,
+            //yValueFormatString: "$#,###k",
+            dataPoints: [
+                {x: 510 , y:30},
+                {x: 511 , y:30},
+                {x: 512 , y:78},
+                {x: 513 , y:30},
+                {x: 514, y:90},
+                {x: 515 , y:30},
+                {x: 516 , y:30},
+                {x: 517 , y:30},
+                {x: 518 , y:30},
+                {x: 519 , y:30},
+                {x: 520 , y:30},
+                {x: 521 , y:30},
+                {x: 522 , y:30},
+                {x: 523, y:30},
+                {x: 524, y:77},
+                {x: 525 , y:30},
+                {x: 526, y:30},
+                {x: 527, y:30},
+                {x: 528, y:30},
+                {x: 529 , y:30},
+                {x: 530 , y:30},
+                {x: 531 , y:30},
+                {x: 532, y:30},
+                {x: 533, y:30},
+                {x: 534, y:30},
+                {x: 535 , y:500},
+                {x: 536, y:30},
+                {x: 537, y:30},
+                {x: 538, y:30},
+                {x: 539 , y:30},
+                {x: 540, y:30},
+            ]
+        
+        }]
+    });
+    chart.render();
+    
+    function toogleDataSeries(e){
+        if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+            e.dataSeries.visible = false;
+        } else{
+            e.dataSeries.visible = true;
+        }
+        chart.render();
+    }
+    
+    
+}
     
