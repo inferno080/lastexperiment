@@ -789,11 +789,33 @@
        transform="scale(0.26458333)"
        d="M 761.6543 13.132812 L 761.6543 18.183594 L 776.80664 18.183594 L 776.80664 13.132812 L 761.6543 13.132812 z M 778.55469 29.068359 L 778.55469 30.708984 L 788.60742 30.708984 L 788.60742 29.068359 L 778.55469 29.068359 z M 762.47266 77.857422 C 761.49845 77.857422 760.71484 78.641031 760.71484 79.615234 L 760.71484 82.169922 C 760.71484 83.144122 761.49845 83.927734 762.47266 83.927734 L 763.61914 83.927734 L 763.61914 108.95898 C 763.61914 109.93319 764.40274 110.71875 765.37695 110.71875 L 768.03906 110.71875 C 769.01327 110.71875 769.79883 109.93319 769.79883 108.95898 L 769.79883 83.927734 L 773.95508 83.927734 C 774.92925 83.927734 775.71484 83.144122 775.71484 82.169922 L 775.71484 79.615234 C 775.71484 78.641031 774.92925 77.857422 773.95508 77.857422 L 762.47266 77.857422 z "
        style="opacity:1;fill:#0097ff;fill-opacity:1;stroke:#000000;stroke-width:1.13386;stroke-linejoin:round;paint-order:markers stroke fill;stroke-opacity:1"
-       id="dropper_grip"onclick = "f4()" />
+       id="dropper_grip"onclick = "f4()" >
+       <animateTransform 
+       attributeName="transform"
+       attributeType="XML"
+       type="translate"
+       dur="5s"
+       values="-100.6543,-100;771,13"
+       restart="whenNotActive"  
+       fill="freeze"
+       begin="dropper_grip.click;blackbox.click;blackbox2.click; dropper.click; droppertip.click; KMnO4_in_dropper.click"
+    />
+    </path>
     <path
        d="m 202.48309,29.289961 h 0.74168 v 0.548175 h -0.74168 z"
        style="opacity:0.897764;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.194194;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
-       id="blackbox"onclick = "f4()" />
+       id="blackbox"onclick = "f4()"  >
+       <animateTransform 
+       attributeName="transform"
+       attributeType="XML"
+       type="translate"
+       dur="5s"
+       values="0,0;10,13"
+       restart="whenNotActive"  
+       fill="freeze"
+       begin="dropper_grip.click;blackbox.click;blackbox2.click; dropper.click; droppertip.click; KMnO4_in_dropper.click"
+    />
+    </path>
     <path
        sodipodi:nodetypes="cccccccccccccccccccc"
        transform="scale(0.26458333)"
@@ -891,7 +913,7 @@
            <div id="chartContainer" style="height: 120px; width: 260px; margin-top: -580px; margin-left: 270px;position: absolute;"></div>
            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-           <script src = "thejs.js">
+           <!-- <script src = "thejs.js"> -->
            </script>
        </body>
    </html>
