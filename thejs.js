@@ -67,68 +67,139 @@ function f2()
     }
 }
 
+function extra2()
+{
+    c++;
+    if(c==7)
+    {
+        f7();
+        setTimeout(function(){
+            document.getElementById("KMnO4_in_cuvette").style.display="none";
+        }, (1500))
+    }
+    else if(c==15)
+    {
+        f15();
+        setTimeout(function(){
+            document.getElementById("KMnO4_in_cuvette").style.display="none";
+        }, (1500))
+    }
+    else if(c==37)
+    {
+        f37();
+        setTimeout(function(){
+            document.getElementById("KMnO4_in_cuvette").style.display="none";
+        }, (1500))
+    }
+    else if(c==39)
+    {
+        f39();
+        setTimeout(function(){
+            document.getElementById("KMnO4_in_cuvette").style.display="none";
+        }, (1500))
+    }
+    else if (c==23)
+    {
+        f23();
+        setTimeout(function(){
+            document.getElementById("KMnO4_in_cuvette").style.display="none";
+        }, (1500))
+    }
+}
+
+function extra1()
+{
+    c++;
+    if(c==5)
+    {
+       f5();
+       setTimeout(function(){
+        document.getElementById("cuvette3").style.display="none";
+        document.getElementById("cuvette2_v2").style.display="block";
+    }, (1500))
+    }
+    else if (c==13)
+    {
+        f13();
+        setTimeout(function(){
+            document.getElementById("cuvette3").style.display="none";
+            document.getElementById("cuvette2_v2").style.display="block";
+        }, (1500))
+    }
+    else if(c==21)
+    {
+        f21();
+        setTimeout(function(){
+            document.getElementById("cuvette3").style.display="none";
+            document.getElementById("cuvette2_v2").style.display="block";
+        }, (1500))
+    }
+    else if(c==29)
+    {
+        f29();
+        setTimeout(function(){
+            document.getElementById("cuvette3").style.display="none";
+            document.getElementById("cuvette2_v2").style.display="block";
+        }, (1500))
+    }
+    else if (c==35)
+    {
+        f35();
+        setTimeout(function(){
+            document.getElementById("cuvette3").style.display="none";
+            document.getElementById("cuvette2_v2").style.display="block";
+        }, (1500))
+    }
+    else
+    {
+        c--;
+        alert("You Clicked on the Wrong Apparatus, Please refresh to avoid potential glitches");
+    }
+
+}
+
 function f3()
 {
     c++;
     if(c==3)
     {
         document.getElementById("fun3").style.display="none";
-    }
-    else if(c==5)
-    {
-       f5();
-    }
-    else if(c==7)
-    {
-        f7();
+        setTimeout(function(){
+            document.getElementById("cuvette2").style.display="none";
+            document.getElementById("cuvette3").style.display="block";
+        }, (1500))
     }
     else if (c==11)
     {
         f11();
-    }
-    else if (c==13)
-    {
-        f13();
-    }
-    else if(c==37)
-    {
-        f37();
-    }
-    else if(c==15)
-    {
-        f15();
-    }
-    else if(c==39)
-    {
-        f39();
+        setTimeout(function(){
+            document.getElementById("cuvette2").style.display="none";
+            document.getElementById("cuvette3").style.display="block";
+        }, (1500))
     }
     else if (c==19)
     {
         f19();
-    }
-    else if(c==21)
-    {
-        f21();
-    }
-    else if (c==23)
-    {
-        f23();
+        setTimeout(function(){
+            document.getElementById("cuvette2").style.display="none";
+            document.getElementById("cuvette3").style.display="block";
+        }, (1500))
     }
     else if (c==27)
     {
         f27();
-    }
-    else if(c==29)
-    {
-        f29();
+        setTimeout(function(){
+            document.getElementById("cuvette2").style.display="none";
+            document.getElementById("cuvette3").style.display="block";
+        }, (1500))
     }
     else if (c==31)
     {
         f31();
-    }
-    else if (c==35)
-    {
-        f35();
+        setTimeout(function(){
+            document.getElementById("cuvette2").style.display="none";
+            document.getElementById("cuvette3").style.display="block";
+        }, (1500))
     }
     else
     {
