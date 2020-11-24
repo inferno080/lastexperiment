@@ -86,14 +86,7 @@ function extra2()
             document.getElementById("cuvette2_v2").style.display="none";
         }, (1500))
     }
-    else if(c==37)
-    {
-        f37();
-        setTimeout(function(){
-            document.getElementById("KMnO4_in_cuvette").style.display="none";
-            document.getElementById("cuvette2_v2").style.display="none";
-        }, (1500))
-    }
+
     else if(c==39)
     {
         f39();
@@ -105,6 +98,14 @@ function extra2()
     else if (c==23)
     {
         f23();
+        setTimeout(function(){
+            document.getElementById("KMnO4_in_cuvette").style.display="none";
+            document.getElementById("cuvette2_v2").style.display="none";
+        }, (1500))
+    }
+    else if (c==31)
+    {
+        f31();
         setTimeout(function(){
             document.getElementById("KMnO4_in_cuvette").style.display="none";
             document.getElementById("cuvette2_v2").style.display="none";
@@ -147,14 +148,15 @@ function extra1()
             document.getElementById("cuvette2_v2").style.display="block";
         }, (1500))
     }
-    else if (c==31)
+    else if(c==37)
     {
-        f31();
+        f37();
         setTimeout(function(){
             document.getElementById("cuvette3").style.display="none";
             document.getElementById("cuvette2_v2").style.display="block";
         }, (1500))
     }
+
     else
     {
         c--;
