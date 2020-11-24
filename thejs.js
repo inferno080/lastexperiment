@@ -320,6 +320,9 @@ function f8()
             if(wavelength==540)
             {
                 document.getElementById("fun8").style.display="none";
+                document.getElementById("cuvette1").style.display="block";
+                document.getElementById("cuvette2").style.display="block";
+                document.getElementById("water_in_cuvette").style.display="block";
             }
         }, (700))
         g1();
@@ -443,6 +446,9 @@ function f16()
         if(wavelength==540)
         {
             document.getElementById("fun16").style.display="none";
+            document.getElementById("cuvette1").style.display="block";
+            document.getElementById("cuvette2").style.display="block";
+            document.getElementById("water_in_cuvette").style.display="block";
         }
     }, (700))
     g1();
@@ -541,6 +547,9 @@ function f24()
         if(wavelength==537)
         {
             document.getElementById("fun24").style.display="none";
+            document.getElementById("cuvette1").style.display="block";
+            document.getElementById("cuvette2").style.display="block";
+            document.getElementById("water_in_cuvette").style.display="block";
         }
     }, (700))
     g1();
@@ -636,7 +645,11 @@ function f32()
         if(wavelength>535)
         {
             document.getElementById("fun32").style.display="none";
+            document.getElementById("cuvette1").style.display="block";
+            document.getElementById("cuvette2").style.display="block";
+            document.getElementById("water_in_cuvette").style.display="block";
         }
+
     }, (700))
     g1();
 }
@@ -727,6 +740,9 @@ function f40()
         if(wavelength>535)
         {
             document.getElementById("fun40").style.display="none";
+            document.getElementById("cuvette1").style.display="block";
+            document.getElementById("cuvette2").style.display="block";
+            document.getElementById("water_in_cuvette").style.display="block";
         }
     }, (700))
     g1();
