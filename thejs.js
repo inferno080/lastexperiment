@@ -791,6 +791,11 @@ function f42()
         f43();
         document.getElementById("fun43").style.display="none";
     }
+    else
+    {
+        c--;
+        alert("You Clicked on the Wrong Apparatus, Please refresh to avoid potential glitches");
+    }
 }
 
 function f43()
