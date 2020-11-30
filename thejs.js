@@ -49,22 +49,31 @@ function f2()
     {
         f10();
         document.getElementById("KMnO4_in_beaker").style.fill= "#b15eba";
+        document.getElementById("KMnO4_in_cuvette").style.fill= "#b15eba";
+        document.getElementById("KMnO4_in_dropper").style.fill= "#b15eba";
     }
     else if(c==18)
     {
         f18();
         document.getElementById("KMnO4_in_beaker").style.fill= "#963b9c";
+        document.getElementById("KMnO4_in_cuvette").style.fill= "#963b9c";
+        document.getElementById("KMnO4_in_dropper").style.fill= "#963b9c";
     }
     else if (c==26)
     {
         f26();
         document.getElementById("KMnO4_in_beaker").style.fill= "#812285";
+        document.getElementById("KMnO4_in_cuvette").style.fill= "#812285";
+        document.getElementById("KMnO4_in_dropper").style.fill= "#812285";
     }
     else if(c==34)
     {
         f34();
         document.getElementById("KMnO4_in_beaker").style.fill= "#660066";
+        document.getElementById("KMnO4_in_cuvette").style.fill= "#660066";
+        document.getElementById("KMnO4_in_dropper").style.fill= "#660066";
     }
+
     else
     {
         c--;
@@ -1229,7 +1238,7 @@ function g2()
                 {x: 526, y:2.893},
                 {x: 527, y:2.915},
                 {x: 528, y:2.9326},
-                {x: 529 , y:2.904,
+                {x: 529 , y:2.904},
                 {x: 530 , y:2.882},
                 {x: 531 , y:2.86},
                 {x: 532, y:2.849},
