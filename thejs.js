@@ -43,22 +43,27 @@ function f2()
     if(c==2)
     {
         document.getElementById("fun2").style.display="none";
+        //document.getElementById("KMnO4_in_beaker").style.fill= "#9c44a3";
     }
     else if(c==10)
     {
         f10();
+        document.getElementById("KMnO4_in_beaker").style.fill= "#b15eba";
     }
     else if(c==18)
     {
         f18();
+        document.getElementById("KMnO4_in_beaker").style.fill= "#963b9c";
     }
     else if (c==26)
     {
         f26();
+        document.getElementById("KMnO4_in_beaker").style.fill= "#812285";
     }
     else if(c==34)
     {
         f34();
+        document.getElementById("KMnO4_in_beaker").style.fill= "#660066";
     }
     else
     {
