@@ -1277,8 +1277,8 @@ function g3()
         count = count || 1;
     
         for (var j = 0; j <5; j++) {
-            yVal +=1;
-            xVal +=1;
+            yVal +=0.001;
+            xVal +=0.001;
              dps.push({
                     x: xVal,
                     y: yVal
