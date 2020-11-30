@@ -83,17 +83,18 @@ function f2()
 
 function extra2()
 {
-    c++;
-    if(c==7)
-    {
+    if(c==6)
+    {   
+        c++;
         f7();
         setTimeout(function(){
             document.getElementById("KMnO4_in_cuvette").style.display="none";
             document.getElementById("cuvette2_v2").style.display="none";
         }, (1500))
     }
-    else if(c==15)
-    {
+    else if(c==14)
+    {   
+        c++;
         f15();
         setTimeout(function(){
             document.getElementById("KMnO4_in_cuvette").style.display="none";
@@ -101,24 +102,27 @@ function extra2()
         }, (1500))
     }
 
-    else if(c==39)
-    {
+    else if(c==38)
+    {   
+        c++;
         f39();
         setTimeout(function(){
             document.getElementById("KMnO4_in_cuvette").style.display="none";
             document.getElementById("cuvette2_v2").style.display="none";
         }, (1500))
     }
-    else if (c==23)
-    {
+    else if (c==22)
+    {   
+        c++;
         f23();
         setTimeout(function(){
             document.getElementById("KMnO4_in_cuvette").style.display="none";
             document.getElementById("cuvette2_v2").style.display="none";
         }, (1500))
     }
-    else if (c==31)
-    {
+    else if (c==30)
+    {   
+        c++;
         f31();
         setTimeout(function(){
             document.getElementById("KMnO4_in_cuvette").style.display="none";
@@ -181,51 +185,50 @@ function extra1()
 
 function f3()
 {
-    c++;
-    if(c==3)
-    {
+    if(c==2)
+    {   
+        c++;
         document.getElementById("fun3").style.display="none";
         setTimeout(function(){
             document.getElementById("cuvette2").style.display="none";
             document.getElementById("cuvette3").style.display="block";
         }, (1500))
     }
-    else if (c==11)
-    {
+    else if (c==10)
+    {   
+        c++;
         f11();
         setTimeout(function(){
             document.getElementById("cuvette2").style.display="none";
             document.getElementById("cuvette3").style.display="block";
         }, (1500))
     }
-    else if (c==19)
-    {
+    else if (c==18)
+    {   
+        c++;
         f19();
         setTimeout(function(){
             document.getElementById("cuvette2").style.display="none";
             document.getElementById("cuvette3").style.display="block";
         }, (1500))
     }
-    else if (c==27)
-    {
+    else if (c==26)
+    {   
+        c++;
         f27();
         setTimeout(function(){
             document.getElementById("cuvette2").style.display="none";
             document.getElementById("cuvette3").style.display="block";
         }, (1500))
     }
-    else if (c==35)
-    {
+    else if (c==34)
+    {   
+        c++;
         f35();
         setTimeout(function(){
             document.getElementById("cuvette2").style.display="none";
             document.getElementById("cuvette3").style.display="block";
         }, (1500))
-    }
-    else
-    {
-        c--;
-        alert("You Clicked on the Wrong Apparatus, Please refresh to avoid potential glitches");
     }
 }
 
