@@ -1230,15 +1230,14 @@ function g1() {
                     x: xVal,
                     y: yVal
                 });
+                updateChart(dataLength);
+                setInterval(function(){updateChart()}, updateInterval);
         }
-    
         if (dps.length > dataLength) {
             dps.shift();
         }
         chart.render();
     };
-        updateChart(dataLength);
-        setInterval(function(){updateChart()}, updateInterval);
     }
 
 function g2()
@@ -1477,6 +1476,8 @@ function g3()
                     x: xVal,
                     y: yVal
                 });
+                updateChart(dataLength);
+                setInterval(function(){updateChart()}, updateInterval);
         }
     
         if (dps.length > dataLength) {
@@ -1484,7 +1485,5 @@ function g3()
         }
         chart.render();
     };
-        updateChart(dataLength);
-        setInterval(function(){updateChart()}, updateInterval);
 }
     
