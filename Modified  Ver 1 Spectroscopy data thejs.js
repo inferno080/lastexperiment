@@ -457,7 +457,7 @@ function f8()
 
         ]
         var k =0;
-        var totalvalues =  0;    //enter total number of values here
+        var totalvalues =  22;    //enter total number of values here
         setInterval(function(){
             x1 = A[k];
             y1 = B[k];
@@ -686,7 +686,7 @@ function f16()
 
         ]
         var k =0;
-        var totalvalues =  0;    //enter total number of values here
+        var totalvalues =  22;   ;    //enter total number of values here
         setInterval(function(){
             x1 = A[k];
             y1 = B[k];
@@ -835,7 +835,7 @@ function f24()
         	700
             ]
             var k =0;
-            var totalvalues =  0;    //enter total number of values here
+            var totalvalues =  22;       //enter total number of values here
             setInterval(function(){
                 x1 = A[k];
                 y1 = B[k];
@@ -982,7 +982,7 @@ function f32()
 
         ]
         var k =0;
-        var totalvalues =  0;    //enter total number of values here
+        var totalvalues =  22;    //enter total number of values here
         setInterval(function(){
             x1 = A[k];
             y1 = B[k];
@@ -1128,7 +1128,7 @@ function f40()
 
         ]
         var k =0;
-        var totalvalues =  0;    //enter total number of values here
+        var totalvalues =  22;    //enter total number of values here
         setInterval(function(){
             x1 = A[k];
             y1 = B[k];
