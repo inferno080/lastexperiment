@@ -466,8 +466,8 @@ function f8()
             console.log(k);
             if(k <= totalvalues)
             {   
-                document.getElementById("Pisplay1").innerHTML = x1;
-                document.getElementById("Pisplay2").innerHTML = y1;
+                document.getElementById("Pisplay1").innerHTML = y1;
+                document.getElementById("Pisplay2").innerHTML = x1;
                 k+=1;
             }
             if(k==totalvalues)
@@ -695,8 +695,8 @@ function f16()
             y1 = B[k];
             if(k <= totalvalues)
             {   
-                document.getElementById("Pisplay1").innerHTML = x1;
-                document.getElementById("Pisplay2").innerHTML = y1;
+                document.getElementById("Pisplay1").innerHTML = y1;
+                document.getElementById("Pisplay2").innerHTML = x1;
                 k+=1;
             }
             if(k==totalvalues)
@@ -844,8 +844,8 @@ function f24()
                 y1 = B[k];
                 if(k <= totalvalues)
                 {   
-                    document.getElementById("Pisplay1").innerHTML = x1;
-                    document.getElementById("Pisplay2").innerHTML = y1;
+                    document.getElementById("Pisplay1").innerHTML = y1;
+                    document.getElementById("Pisplay2").innerHTML = x1;
                     k+=1;
                 }
                 if(k==totalvalues)
@@ -990,8 +990,8 @@ function f32()
             y1 = B[k];
             if(k <= totalvalues)
             {   
-                document.getElementById("Pisplay1").innerHTML = x1;
-                document.getElementById("Pisplay2").innerHTML = y1;
+                document.getElementById("Pisplay1").innerHTML = y1;
+                document.getElementById("Pisplay2").innerHTML = x1;
                 k+=1;
             }
             if(k==totalvalues)
@@ -1136,8 +1136,8 @@ function f40()
             y1 = B[k];
             if(k <= totalvalues)
             {   
-                document.getElementById("Pisplay1").innerHTML = x1;
-                document.getElementById("Pisplay2").innerHTML = y1;
+                document.getElementById("Pisplay1").innerHTML = y1;
+                document.getElementById("Pisplay2").innerHTML = x1;
                 k+=1;
             }
             if(k==totalvalues)
@@ -1224,8 +1224,8 @@ function g1() {
         count = count || 1;
     
         for (var j = 0; j < 31; j++) {
-            yVal = y1;
-            xVal = x1;
+            yVal = x1;
+            xVal = y1;
              dps.push({
                     x: xVal,
                     y: yVal
