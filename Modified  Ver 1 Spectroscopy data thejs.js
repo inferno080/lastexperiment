@@ -614,7 +614,7 @@ function f14()
 
 function f48()
 {
-    document.getElementById("fun14").style.display="none";
+    document.getElementById("fun48").style.display="none";
     setTimeout(function(){
         document.getElementById("cuvette1").style.display="none";
         document.getElementById("water_in_cuvette").style.display="none";
