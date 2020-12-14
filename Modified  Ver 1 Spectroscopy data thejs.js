@@ -230,7 +230,7 @@ function extra1()
 
 function f3()
 {   
-    if(c==45)
+    if(c==44)
     {
         c++;
         f45();
