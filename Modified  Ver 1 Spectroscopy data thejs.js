@@ -1,5 +1,7 @@
 var c = 0;
-var wavelength = 410;
+var x1;
+var y1;
+var wavelength;
 var absorbance = 0;
 function f1()
 {   
@@ -457,14 +459,15 @@ function f8()
 
         ]
         var k =0;
-        var totalvalues =  22;    //enter total number of values here
+        var totalvalues =  21;    //enter total number of values here
         setInterval(function(){
             x1 = A[k];
             y1 = B[k];
+            console.log(k);
             if(k <= totalvalues)
             {   
-                document.getElementById("Pisplay1").innerHTML = wavelength;
-                document.getElementById("Pisplay2").innerHTML = absorbance;
+                document.getElementById("Pisplay1").innerHTML = x1;
+                document.getElementById("Pisplay2").innerHTML = y1;
                 k+=1;
             }
             if(k==totalvalues)
@@ -634,7 +637,7 @@ function f15()
 
 function f16()
 {     
-    wavelength=417;
+    //wavelength=417;
     var A =[
         	0.005,
         	0.006,
@@ -686,14 +689,14 @@ function f16()
 
         ]
         var k =0;
-        var totalvalues =  22;   ;    //enter total number of values here
+        var totalvalues =  21;   ;    //enter total number of values here
         setInterval(function(){
             x1 = A[k];
             y1 = B[k];
             if(k <= totalvalues)
             {   
-                document.getElementById("Pisplay1").innerHTML = wavelength;
-                document.getElementById("Pisplay2").innerHTML = absorbance;
+                document.getElementById("Pisplay1").innerHTML = x1;
+                document.getElementById("Pisplay2").innerHTML = y1;
                 k+=1;
             }
             if(k==totalvalues)
@@ -784,7 +787,7 @@ function f23()
 
 function f24()
 {
-    wavelength=510;
+   // wavelength=510;
         
     var A =[
         	0.015,
@@ -835,14 +838,14 @@ function f24()
         	700
             ]
             var k =0;
-            var totalvalues =  22;       //enter total number of values here
+            var totalvalues =  21;       //enter total number of values here
             setInterval(function(){
                 x1 = A[k];
                 y1 = B[k];
                 if(k <= totalvalues)
                 {   
-                    document.getElementById("Pisplay1").innerHTML = wavelength;
-                    document.getElementById("Pisplay2").innerHTML = absorbance;
+                    document.getElementById("Pisplay1").innerHTML = x1;
+                    document.getElementById("Pisplay2").innerHTML = y1;
                     k+=1;
                 }
                 if(k==totalvalues)
@@ -930,7 +933,6 @@ function f31()
 
 function f32()
 {   
-    wavelength = 510;
     
     var A =[
             0.029,
@@ -982,14 +984,14 @@ function f32()
 
         ]
         var k =0;
-        var totalvalues =  22;    //enter total number of values here
+        var totalvalues =  21;    //enter total number of values here
         setInterval(function(){
             x1 = A[k];
             y1 = B[k];
             if(k <= totalvalues)
             {   
-                document.getElementById("Pisplay1").innerHTML = wavelength;
-                document.getElementById("Pisplay2").innerHTML = absorbance;
+                document.getElementById("Pisplay1").innerHTML = x1;
+                document.getElementById("Pisplay2").innerHTML = y1;
                 k+=1;
             }
             if(k==totalvalues)
@@ -1077,7 +1079,7 @@ function f39()
 }
 function f40()
 {
-    wavelength = 510;
+    
     var A =[
             0.043,
         	0.045,
@@ -1128,14 +1130,14 @@ function f40()
 
         ]
         var k =0;
-        var totalvalues =  22;    //enter total number of values here
+        var totalvalues =  21;    //enter total number of values here
         setInterval(function(){
             x1 = A[k];
             y1 = B[k];
             if(k <= totalvalues)
             {   
-                document.getElementById("Pisplay1").innerHTML = wavelength;
-                document.getElementById("Pisplay2").innerHTML = absorbance;
+                document.getElementById("Pisplay1").innerHTML = x1;
+                document.getElementById("Pisplay2").innerHTML = y1;
                 k+=1;
             }
             if(k==totalvalues)
@@ -1222,8 +1224,8 @@ function g1() {
         count = count || 1;
     
         for (var j = 0; j < 31; j++) {
-            yVal = absorbance;
-            xVal = wavelength;
+            yVal = y1;
+            xVal = x1;
              dps.push({
                     x: xVal,
                     y: yVal
