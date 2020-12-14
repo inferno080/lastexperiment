@@ -71,10 +71,10 @@
     
   }
   .hours-container {
-    animation: rotate1 6s  linear;
+    animation: rotate1 8s  linear;
   }
   .minutes-container {
-    animation: rotate2 6s  linear;
+    animation: rotate2 8s  linear;
   }
   
   @keyframes rotate2 {
