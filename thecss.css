@@ -66,15 +66,15 @@
   
   @keyframes rotate1 {
     100% {
-      transform: rotateZ(30deg);
+      transform: rotateZ(15deg);
     }
     
   }
   .hours-container {
-    animation: rotate1 5s  linear;
+    animation: rotate1 6s  linear;
   }
   .minutes-container {
-    animation: rotate2 5s  linear;
+    animation: rotate2 6s  linear;
   }
   
   @keyframes rotate2 {
