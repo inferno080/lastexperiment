@@ -10,13 +10,16 @@ function f1()
     {
         document.getElementById("Green_LED").style.display= "block";
         document.getElementById("Red_LED").style.display= "none";
-        document.getElementById("fun1").style.display="none";
-        document.getElementById("svg1").style.display="none";
-        document.getElementById("svg2").style.display="block";
+        setTimeout(function(){      
+            document.getElementById("fun1").style.display="none";
+            document.getElementById("svg1").style.display="none";
+            document.getElementById("svg2").style.display="block";
+          }, (1000))
         setTimeout(function(){
-            document.getElementById("svg1").style.display="block";
-            document.getElementById("svg2").style.display="none";
+                document.getElementById("svg1").style.display="block";
+                document.getElementById("svg2").style.display="none";
         }, (5000))
+
         
     }
     else if(c==51)
@@ -26,22 +29,27 @@ function f1()
     else if(c==9)
     {
         f9();
+        document.getElementById("wolf").style.display="none";
     }
     else if(c==17)
     {
         f17();
+        document.getElementById("wolf").style.display="none";
     }
     else if (c==25)
     {
         f25();
+        document.getElementById("wolf").style.display="none";
     }
     else if(c==33)
     {
         f33();
+        document.getElementById("wolf").style.display="none";
     }
     else if(c==41)
     {
         f41();
+        document.getElementById("wolf").style.display="none";
     }
     else
     {
@@ -61,10 +69,11 @@ function f2()
     else if(c==44)
     {
         f44();
+        document.getElementById("wolf").style.display="none";
         document.getElementById("KMnO4_in_specto").style.fill= "#660066";
         document.getElementById("KMnO4_in_beaker").style.fill= "#660066";
         document.getElementById("KMnO4_in_cuvette").style.fill= "#660066";
-        document.getElementById("KMnO4_in_dropper").style.fill= "#660066";
+        document.getElementById("KMnO4_in_micro pipette").style.fill= "#660066";
     }
     else if(c==10)
     {
@@ -72,7 +81,7 @@ function f2()
         document.getElementById("KMnO4_in_specto").style.fill= "#b15eba";
         document.getElementById("KMnO4_in_beaker").style.fill= "#b15eba";
         document.getElementById("KMnO4_in_cuvette").style.fill= "#b15eba";
-        document.getElementById("KMnO4_in_dropper").style.fill= "#b15eba";
+        document.getElementById("KMnO4_in_micro pipette").style.fill= "#b15eba";
     }
     else if(c==18)
     {
@@ -80,7 +89,7 @@ function f2()
         document.getElementById("KMnO4_in_specto").style.fill= "#963b9c";
         document.getElementById("KMnO4_in_beaker").style.fill= "#963b9c";
         document.getElementById("KMnO4_in_cuvette").style.fill= "#963b9c";
-        document.getElementById("KMnO4_in_dropper").style.fill= "#963b9c";
+        document.getElementById("KMnO4_in_micro pipette").style.fill= "#963b9c";
 
     }
     else if (c==26)
@@ -90,7 +99,7 @@ function f2()
         document.getElementById("KMnO4_in_specto").style.fill=  "#812285";
         document.getElementById("KMnO4_in_beaker").style.fill= "#812285";
         document.getElementById("KMnO4_in_cuvette").style.fill= "#812285";
-        document.getElementById("KMnO4_in_dropper").style.fill= "#812285";
+        document.getElementById("KMnO4_in_micro pipette").style.fill= "#812285";
 
     }
     else if(c==34)
@@ -99,7 +108,7 @@ function f2()
         document.getElementById("KMnO4_in_specto").style.fill= "#660066";
         document.getElementById("KMnO4_in_beaker").style.fill= "#660066";
         document.getElementById("KMnO4_in_cuvette").style.fill= "#660066";
-        document.getElementById("KMnO4_in_dropper").style.fill= "#660066";
+        document.getElementById("KMnO4_in_micro pipette").style.fill= "#660066";
     }
 
     else
@@ -293,7 +302,7 @@ function f4()
     {
         document.getElementById("fun4").style.display="none";
         setTimeout(function(){
-            document.getElementById("KMnO4_in_dropper").style.display="block";
+            document.getElementById("KMnO4_in_micro pipette").style.display="block";
         }, (1500))
     }
     else if(c==46)
@@ -327,7 +336,7 @@ function f47()
     document.getElementById("fun47").style.display="none";
     setTimeout(function(){
         document.getElementById("KMnO4_in_cuvette").style.display="block";
-        document.getElementById("KMnO4_in_dropper").style.display="none";
+        document.getElementById("KMnO4_in_micro pipette").style.display="none";
     }, (1500))
 }
 function f5()
@@ -335,7 +344,7 @@ function f5()
     document.getElementById("fun5").style.display="none";
     setTimeout(function(){
         document.getElementById("KMnO4_in_cuvette").style.display="block";
-        document.getElementById("KMnO4_in_dropper").style.display="none";
+        document.getElementById("KMnO4_in_micro pipette").style.display="none";
     }, (1500))
 }
 
@@ -409,6 +418,11 @@ function f8()
     c++;
     if(c==8)
     {   
+        setTimeout(function(){
+            document.getElementById("wolf").style.display="block";
+            document.getElementById("wolf_inner").innerHTML = "λmax = 528";
+        }, (1500))
+
         var A =[
         
         	0.0006,
@@ -486,23 +500,35 @@ function f8()
         } */
     }
     else if (c==16)
-    {
+    {   
+        setTimeout(function(){
+            document.getElementById("wolf").style.display="block";
+        }, (1500))
         f16();
     }
     else if(c==24)
     {
+        setTimeout(function(){
+            document.getElementById("wolf").style.display="block";
+        }, (1500))
         f24();
     }
     else if(c==32)
     {
+        setTimeout(function(){
+            document.getElementById("wolf").style.display="block";
+        }, (1500))
         f32();
     }
     else if(c==40)
     {
+        setTimeout(function(){
+            document.getElementById("wolf").style.display="block";
+        }, (1500))
         f40();
     }
     else if(c==50)
-    {
+    {   
         f50();
     }
     else
@@ -577,7 +603,7 @@ function f46()
 {
     document.getElementById("fun46").style.display="none";
     setTimeout(function(){
-        document.getElementById("KMnO4_in_dropper").style.display="block";
+        document.getElementById("KMnO4_in_micro pipette").style.display="block";
     }, (1500))
 }
 
@@ -585,7 +611,7 @@ function f12()
 {
     document.getElementById("fun12").style.display="none";
     setTimeout(function(){
-        document.getElementById("KMnO4_in_dropper").style.display="block";
+        document.getElementById("KMnO4_in_micro pipette").style.display="block";
     }, (1500))
 }
 function f13()
@@ -593,7 +619,7 @@ function f13()
     document.getElementById("fun13").style.display="none";
     setTimeout(function(){
         document.getElementById("KMnO4_in_cuvette").style.display="block";
-        document.getElementById("KMnO4_in_dropper").style.display="none";
+        document.getElementById("KMnO4_in_micro pipette").style.display="none";
     }, (1500))
 }
 
@@ -749,7 +775,7 @@ function f20()
 {
     document.getElementById("fun20").style.display="none";
     setTimeout(function(){
-        document.getElementById("KMnO4_in_dropper").style.display="block";
+        document.getElementById("KMnO4_in_micro pipette").style.display="block";
     }, (1500))
 }
 
@@ -758,7 +784,7 @@ function f21()
     document.getElementById("fun21").style.display="none";
     setTimeout(function(){
         document.getElementById("KMnO4_in_cuvette").style.display="block";
-        document.getElementById("KMnO4_in_dropper").style.display="none";
+        document.getElementById("KMnO4_in_micro pipette").style.display="none";
     }, (1500))
 }
 
@@ -896,7 +922,7 @@ function f28()
 {
     document.getElementById("fun28").style.display="none";
     setTimeout(function(){
-        document.getElementById("KMnO4_in_dropper").style.display="block";
+        document.getElementById("KMnO4_in_micro pipette").style.display="block";
     }, (1500))
 }
 function f29()
@@ -904,7 +930,7 @@ function f29()
     document.getElementById("fun29").style.display="none";
     setTimeout(function(){
         document.getElementById("KMnO4_in_cuvette").style.display="block";
-        document.getElementById("KMnO4_in_dropper").style.display="none";
+        document.getElementById("KMnO4_in_micro pipette").style.display="none";
     }, (1500))
 }
 
@@ -1045,7 +1071,7 @@ function f36()
 {
     document.getElementById("fun36").style.display="none";
     setTimeout(function(){
-        document.getElementById("KMnO4_in_dropper").style.display="block";
+        document.getElementById("KMnO4_in_micro pipette").style.display="block";
     }, (1500))
 }
 function f37()
@@ -1053,7 +1079,7 @@ function f37()
     document.getElementById("fun37").style.display="none";
     setTimeout(function(){
         document.getElementById("KMnO4_in_cuvette").style.display="block";
-        document.getElementById("KMnO4_in_dropper").style.display="none";
+        document.getElementById("KMnO4_in_micro pipette").style.display="none";
     }, (1500))
 }
 function f38()
@@ -1190,6 +1216,10 @@ function f42()
     else if(c==43)
     {
         f43();
+        setTimeout(function(){
+            document.getElementById("wolf").style.display="block";
+            document.getElementById("wolf_inner").innerHTML = "Beer's Law is Verified";
+        }, (1500))
         document.getElementById("fun43").style.display="none";
     }
     else
@@ -1202,6 +1232,14 @@ function f42()
 function f43()
 {
     g3();
+}
+
+function f50()
+{
+    document.getElementById("fun50").style.display="none";
+    document.getElementById("Pisplay1").innerHTML = "528";
+    document.getElementById("Pisplay2").innerHTML = "0.0002";
+    //create datapoint
 }
 
 function g1() {
