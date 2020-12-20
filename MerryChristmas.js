@@ -11,6 +11,7 @@ var y1;
 var wavelength;
 var absorbance = 0;
 
+
 window.test = function(e) 
 {
     if (e.value === '1') 
@@ -72,6 +73,7 @@ function checkall()
     }
 }
 
+
 function f1()
 {   
     c++;
@@ -91,9 +93,39 @@ function f1()
                 c++;
         }, (6000))
     }
+    else if(c==23)
+    {
+        f10();
+    }
     else if(c==10)
     {
         f10();
+    }
+    else if(c==13)
+    {
+        c++;
+        setTimeout(function(){      
+            document.getElementById("fun13").style.display="none";
+            document.getElementById("svg1").style.display="none";
+            document.getElementById("svg3").style.display="block";
+          }, (100))
+        setTimeout(function(){
+                document.getElementById("svg1").style.display="block";
+                document.getElementById("svg3").style.display="none";
+                document.getElementById("Grinch").style.display= "none";
+        }, (5000))
+    }
+    else if (c==15)
+    {
+        setTimeout(function(){      
+            document.getElementById("fun15").style.display="none";
+            document.getElementById("svg1").style.display="none";
+            document.getElementById("svg4").style.display="block";
+          }, (100))
+        setTimeout(function(){
+                document.getElementById("svg1").style.display="block";
+                document.getElementById("svg4").style.display="none";
+        }, (5000))
     }
     else
     {
@@ -153,6 +185,10 @@ function f3()
         document.getElementById("Grinch").style.display= "none";
         document.getElementById("fun3").style.display="none";
     }
+    else if(c==16)
+    {
+        document.getElementById("fun16").style.display="none";
+    }
     else
     {
         c--;
@@ -171,6 +207,14 @@ function f4()
             document.getElementById("cuvette3").style.display="block";
         }, (1500))
     }
+    else if(c==17)
+    {
+        document.getElementById("fun17").style.display="none";
+        setTimeout(function(){
+            document.getElementById("cuvette2").style.display="none";
+            document.getElementById("cuvette3").style.display="block";
+        }, (1500))
+    }
     else
     {
         c--;
@@ -184,6 +228,13 @@ function f5()
     if(c==5)
     {
         document.getElementById("fun5").style.display="none";
+        setTimeout(function(){
+            document.getElementById("KMnO4_in_micro pipette").style.display="block";
+        }, (1500))
+    }
+    else if(c==18)
+    {
+        document.getElementById("fun18").style.display="none";
         setTimeout(function(){
             document.getElementById("KMnO4_in_micro pipette").style.display="block";
         }, (1500))
@@ -208,6 +259,16 @@ function f6()
             document.getElementById("cuvette2_v2").style.display="block";
         }, (1500))
     }
+    else if(c==19)
+    {
+        document.getElementById("fun19").style.display="none";
+        setTimeout(function(){
+            document.getElementById("KMnO4_in_cuvette").style.display="block";
+            document.getElementById("KMnO4_in_micro pipette").style.display="none";
+            document.getElementById("cuvette3").style.display="none";
+            document.getElementById("cuvette2_v2").style.display="block";
+        }, (1500))
+    }
     else
     {
         c--;
@@ -221,6 +282,20 @@ function f7()
     if(c==7)
     {
         document.getElementById("fun7").style.display="none";
+        setTimeout(function(){
+            document.getElementById("cuvette1").style.display="none";
+            document.getElementById("water_in_cuvette").style.display="none";
+            document.getElementById("close").style.display="block";
+            document.getElementById("close2").style.display="block";
+            document.getElementById("close3").style.display="block";
+            document.getElementById("close7").style.display="block";
+            document.getElementById("close6").style.display="block";
+            document.getElementById("close4").style.display="block";
+        }, (1500))
+    }
+    else if(c==20)
+    {
+        document.getElementById("fun20").style.display="none";
         setTimeout(function(){
             document.getElementById("cuvette1").style.display="none";
             document.getElementById("water_in_cuvette").style.display="none";
@@ -255,6 +330,19 @@ function f8()
             c++;
         }, (1500))
     }
+    else if(c==21)
+    {
+        document.getElementById("fun21").style.display="none";
+        setTimeout(function(){
+            document.getElementById("cuvette2").style.display="none";
+            document.getElementById("KMnO4_in_cuvette").style.display="none";
+            document.getElementById("close5").style.display="block";
+            document.getElementById("KMnO4_in_cuvette").style.display="none";
+            document.getElementById("cuvette2_v2").style.display="none";
+            document.getElementById("KMnO4_in_specto").style.display="block";
+            c++;
+        }, (1500))
+    }
     else
     {
         c--;
@@ -266,7 +354,21 @@ function f9()
 {   
     if(c==12)
     {
+        document.getElementById("fun12").style.display="none";
         g2();
+    }
+    else if(c==22)
+    {
+        document.getElementById("fun22").style.display="none";
+        document.getElementById("Pisplay1").innerHTML = "528";
+        document.getElementById("Pisplay2").innerHTML = "0.00425";
+        //add red dot here
+    }
+    else if(c==14)
+    {   
+        console.log(c);
+        document.getElementById("fun14").style.display="none";
+        g3();
     }
     else if(c==9 | c==11)
     {     
@@ -331,7 +433,6 @@ function f9()
             setInterval(function(){
                 x1 = A[k];
                 y1 = B[k];
-                console.log(k);
                 if(k <= totalvalues)
                 {   
                     document.getElementById("Pisplay1").innerHTML = y1;
@@ -651,7 +752,14 @@ function f10()
     document.getElementById("water_in_cuvette").style.display="block";
     document.getElementById("cuvette2").style.display="block";
     document.getElementById("KMnO4_in_cuvette").style.display="block";
-    document.getElementById("fun10").style.display="none";
+    if(c==10)
+    {
+        document.getElementById("fun10").style.display="none";
+    }
+    else if(c==23)
+    {
+        document.getElementById("fun23").style.display="none";
+    }
     setTimeout(function(){
         document.getElementById("KMnO4_in_cuvette").style.display="none";
         document.getElementById("cuvette1").style.display="block";
@@ -910,4 +1018,43 @@ function g1() {
         
     }
     
+    function g3()
+{
+    var dps = []; // dataPoints
+    var chart = new CanvasJS.Chart("chartContainer", {
+        title :{
+            text: "Absorbance vs Concentration"
+        },
+        data: [{
+            type: "line",
+            dataPoints: dps
+        }]
+    });
+    //var op= 0;
+    var xVal = 0.001;
+    var yVal = 0.001; 
+    var updateInterval = 700;
+    var dataLength = 31; // number of dataPoints visible at any point
+    
+    var updateChart = function (count) {
+    
+        count = count || 1;
+    
+        for (var j = 0; j <5; j++) {
+            yVal +=0.001;
+            xVal +=0.001;
+             dps.push({
+                    x: xVal,
+                    y: yVal
+                });
+        }
+    
+        if (dps.length > dataLength) {
+            dps.shift();
+        }
+        chart.render();
+    };
+        updateChart(dataLength);
+        setInterval(function(){updateChart()}, updateInterval);
+}
 
