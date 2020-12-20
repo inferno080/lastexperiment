@@ -3,6 +3,20 @@ var x1;
 var y1;
 var wavelength;
 var absorbance = 0;
+
+/* function yes(){
+    setTimeout(function(){      
+        document.getElementById("fun1").style.display="none";
+        document.getElementById("svg1").style.display="none";
+        
+      }, (1000))
+      document.getElementById("svg2").style.display="block";
+    setTimeout(function(){
+            document.getElementById("svg1").style.display="block";
+            document.getElementById("svg2").style.display="none";
+    }, (5000))
+} */
+
 function f1()
 {   
     c++;
@@ -13,12 +27,22 @@ function f1()
         setTimeout(function(){      
             document.getElementById("fun1").style.display="none";
             document.getElementById("svg1").style.display="none";
-            document.getElementById("svg2").style.display="block";
+            
           }, (1000))
+          document.getElementById("svg2").style.display="block";
         setTimeout(function(){
                 document.getElementById("svg1").style.display="block";
                 document.getElementById("svg2").style.display="none";
         }, (5000))
+
+       /*  setTimeout((function(){
+            document.getElementById("Second").style.display ="none" 
+            document.getElementById("First").style.display ="block" 
+        }), (6000))
+        setTimeout((function(){
+            document.getElementById("First").style.display ="none" 
+            document.getElementById("Second").style.display ="block" 
+        }), (1000)) */
 
         
     }

@@ -97,7 +97,7 @@ function f1()
                 document.getElementById("svg2").style.display="none";
                 document.getElementById("Grinch").style.display= "block";
                 c++;
-        }, (5000))
+        }, (6000))
     }
     else if(c==10)
     {
