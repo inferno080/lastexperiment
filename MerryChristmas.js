@@ -38,38 +38,29 @@ window.test = function(e)
 
 function Kirti()
 {   
-    flag1 = true;
     current = 1;
     f2();
-    checkall();
 }
 function Aashna()
 {
-    flag2 = true;
     current =2;
     f2();
-    checkall();
 }
 function Neil()
 {
-    flag3 = true;
     current = 3;
     f2();
-    checkall();
 }
 function Manasi()
 {
-    flag4 = true;
     current = 4;
     f2();
-    checkall();
 }
 function Rathish()
 {
-    flag5 = true;
     current = 5;
     f2();
-    checkall();
+
 }
 
 function checkall()
@@ -77,6 +68,7 @@ function checkall()
     if(flag1==true && flag2==true && flag3==true && flag4==true && flag5 == true)
     {
         document.getElementById("fun11").style.display="none";
+        c++;
     }
 }
 
@@ -225,14 +217,11 @@ function f6()
 
 function f7()
 {   
-    alert("Yeppppp");
     c++
     if(c==7)
     {
-        alert("Yeooooo");
         document.getElementById("fun7").style.display="none";
         setTimeout(function(){
-            alert("Yeppppp");
             document.getElementById("cuvette1").style.display="none";
             document.getElementById("water_in_cuvette").style.display="none";
             document.getElementById("close").style.display="block";
@@ -263,6 +252,7 @@ function f8()
             document.getElementById("KMnO4_in_cuvette").style.display="none";
             document.getElementById("cuvette2_v2").style.display="none";
             document.getElementById("KMnO4_in_specto").style.display="block";
+            c++;
         }, (1500))
     }
     else
@@ -273,13 +263,17 @@ function f8()
 }
 
 function f9()
-{
-    c++;
-    if(c==9 | c==11)
+{   
+    if(c==12)
     {
+        g2();
+    }
+    else if(c==9 | c==11)
+    {     
         document.getElementById("fun9").style.display="none";
         if(current ==1)
         {
+            flag1= true;
             var A =[
         
                 0.0006,
@@ -353,6 +347,7 @@ function f9()
         }
         else if(current==2)
         {
+            flag2= true;
             var A =[
                 0.005,
                 0.006,
@@ -423,6 +418,7 @@ function f9()
         }
         else if(current ==3)
         {
+            flag3= true;
             var A =[
                 0.015,
                 0.016,
@@ -491,6 +487,7 @@ function f9()
         }
         else if(current ==4)
         {
+            flag4= true;
             var A =[
                 0.029,
                 0.031,
@@ -560,6 +557,7 @@ function f9()
         }
         else if(current ==5)
         {
+            flag5= true;
             var A =[
                 0.043,
                 0.045,
@@ -627,6 +625,7 @@ function f9()
             }, (700))
             g1();
         }
+        checkall();
     }
     else
     {
@@ -659,6 +658,7 @@ function f10()
         document.getElementById("cuvette2").style.display="block";
         document.getElementById("water_in_cuvette").style.display="block";
         document.getElementById("Grinch").style.display= "block";
+        c++;
     }, (1500))
 
 }
@@ -703,4 +703,211 @@ function g1() {
         setInterval(function(){updateChart()}, updateInterval);
     }
 
+    function g2()
+    {
+        var chart = new CanvasJS.Chart("chartContainer", {
+            title: {
+                text: "Comaparison between samples of different concentrations",
+                fontSize: 10
+            },
+            legend:{
+                fontSize: 7,
+               },
+         /*   axisX: {
+                valueFormatString: "MMM YYYY"
+            },
+            axisY2: {
+                title: "Median List Price",
+                prefix: "$",
+                suffix: "K"
+            },
+            toolTip: {
+                shared: true
+            },
+            legend: {
+                cursor: "pointer",
+                verticalAlign: "top",
+                horizontalAlign: "center",
+                dockInsidePlotArea: true,
+                itemclick: toogleDataSeries
+            },
+        */
+            data: [{
+                type:"line",
+                //axisYType: "secondary",
+                name: "Sample 1",
+                showInLegend: true,
+                markerSize: 0,
+                //yValueFormatString: "$#,###k",
+                dataPoints: [	
+                   {x: 417, y:0.0006},
+                   {x: 426 , y:0.0009},
+                   {x: 427 , y:0.0015},
+                   {x: 442 , y:0.0065},
+                   {x: 458 , y:0.0195},            
+                   {x: 474 , y:0.0451},
+                   {x: 490 , y:0.0905},
+                   {x: 506 , y:0.1377},
+                   {x: 528 , y:0.1789},
+                   {x: 538, y:0.1611},
+                   {x: 554 , y:0.1568},
+                   {x: 570 , y:0.1092},
+                   {x: 586 , y:0.0383},
+                   {x: 602 , y:0.0189},
+                   {x: 618 , y:0.0152},
+                   {x: 634 , y:0.0133},
+                   {x: 650 , y:0.0109},
+                   {x: 666 , y:0.0082},
+                   {x: 682, y:0.0055},
+                   {x: 698, y:0.0033},
+                   {x: 699 , y:0.0031},
+                   {x: 700, y:0.0029},
+    
+                ]
+            },
+            {
+                type: "line",
+                //axisYType: "secondary",
+                name: "Sample2",
+                showInLegend: true,
+                markerSize: 0,
+                //yValueFormatString: "$#,###k",
+                dataPoints: [
+                   {x: 417, y:0.005},
+                   {x: 426 , y:0.006},
+                   {x: 427 , y:0.006},
+                   {x: 442 , y:0.019},
+                   {x: 458 , y:0.049},            
+                   {x: 474 , y:0.109},
+                   {x: 490 , y:0.199},
+                   {x: 506 , y:0.246},
+                   {x: 528 , y:0.269},
+                   {x: 538, y:0.26},
+                   {x: 554 , y:0.253},
+                   {x: 570 , y:0.242},
+                   {x: 586 , y:0.099},
+                   {x: 602 , y:0.049},
+                   {x: 618 , y:0.04},
+                   {x: 634 , y:0.035},
+                   {x: 650 , y:0.029},
+                   {x: 666 , y:0.023},
+                   {x: 682, y:0.016},
+                   {x: 698, y:0.01},
+                   {x: 699 , y:0.01},
+                   {x: 700, y:0.01},
+    
+                ]
+            },
+            {
+                type: "line",
+                //axisYType: "secondary",
+                name: "Sample 3",
+                showInLegend: true,
+                markerSize: 0,
+                //yValueFormatString: "$#,###k",
+                dataPoints: [
+                   {x: 417, y:0.015},
+                   {x: 426 , y:0.016},
+                   {x: 427 , y:0.016},
+                   {x: 442 , y:0.043},
+                   {x: 458 , y:0.108},            
+                   {x: 474 , y:0.226},
+                   {x: 490 , y:0.322},
+                   {x: 506 , y:0.354},
+                   {x: 528 , y:0.398},
+                   {x: 538, y:0.38},
+                   {x: 554 , y:0.363},
+                   {x: 570 , y:0.343},
+                   {x: 586 , y:0.213},
+                   {x: 602 , y:0.108},
+                   {x: 618 , y:0.088},
+                   {x: 634 , y:0.078},
+                   {x: 650 , y:0.064},
+                   {x: 666 , y:0.05},
+                   {x: 682, y:0.035},
+                   {x: 698, y:0.023},
+                   {x: 699 , y:0.029},
+                   {x: 700, y:0.028},
+                ]
+            },
+            {
+                type: "line",
+                //axisYType: "secondary",
+                name: "Sample4",
+                showInLegend: true,
+                markerSize: 0,
+                yValueFormatString: "$#,###k",
+                dataPoints: [
+                   {x: 417, y:0.029},
+                   {x: 426 , y:0.031},
+                   {x: 427 , y:0.033},
+                   {x: 442 , y:0.085},
+                   {x: 458 , y:0.213},            
+                   {x: 474 , y:0.412},
+                   {x: 490 , y:0.563},
+                   {x: 506 , y:0.608},
+                   {x: 528 , y:0.667},
+                   {x: 538, y:0.613},
+                   {x: 554 , y:0.588},
+                   {x: 570 , y:0.55},
+                   {x: 586 , y:0.411},
+                   {x: 602 , y:0.215},
+                   {x: 618 , y:0.174},
+                   {x: 634 , y:0.154},
+                   {x: 650 , y:0.128},
+                   {x: 666 , y:0.100},
+                   {x: 682, y:0.070},
+                   {x: 698, y:0.045},
+                   {x: 699 , y:0.043},
+                   {x: 700, y:0.04},
+                ]
+            },
+            {
+                type: "line",
+                //axisYType: "secondary",
+                name: "Sample5",
+                showInLegend: true,
+                markerSize: 0,
+                //yValueFormatString: "$#,###k",
+                dataPoints: [
+                   {x: 417, y:0.043},
+                   {x: 426 , y:0.045},
+                   {x: 427 , y:0.048},
+                   {x: 442 , y:0.125},
+                   {x: 458 , y:0.312},            
+                   {x: 474 , y:0.604},
+                   {x: 490 , y:0.825},
+                   {x: 506 , y:0.891},
+                   {x: 528 , y:0.978},
+                   {x: 538 , y:0.899},
+                   {x: 554 , y:0.862},
+                   {x: 570 , y:0.807},
+                   {x: 586 , y:0.651},
+                   {x: 602 , y:0.355},
+                   {x: 618 , y:0.289},
+                   {x: 634 , y:0.255},
+                   {x: 650 , y:0.212},
+                   {x: 666 , y:0.165},
+                   {x: 682 , y:0.117},
+                   {x: 698 , y:0.075},
+                   {x: 699 , y:0.073},
+                   {x: 700 , y:0.07},
+                ]
+            
+            }]
+        });
+        chart.render();
+        
+        function toogleDataSeries(e){
+            if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                e.dataSeries.visible = false;
+            } else{
+                e.dataSeries.visible = true;
+            }
+            chart.render();
+        }
+        
+        
+    }
+    
 

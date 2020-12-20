@@ -142,7 +142,7 @@
            <p><b>Click on the empty cuvette</b> to fill it with KMn0<sub>4</sub></p>
        </div>
        <div class="slave" id="fun12">
-           <p><b>Click on the micro pipette</b> to fill it with KMnO<sub>4</sub></p>
+           <p>All graphs have been plotted, now click on the monitor again to compare the graphs</p>
        </div>
        
        <div class="slave" id="fun11">
@@ -336,12 +336,11 @@ width="297mm">
    x="25.738455"
    height="12.619843"
    width="17.422318" 
-   id="random" display="none"
+   id="random" 
    style="fill:#005522;stroke:#000000;stroke-width:0.18134;stroke-linejoin:round;paint-order:markers stroke fill" />
 <rect
    style="fill:#16502d;stroke:#000000;stroke-width:0.18134;stroke-linejoin:round;paint-order:markers stroke fill"
    id="rect918-1"
-   display="none"
    width="17.422318"
    height="12.619843"
    x="46.506794"
@@ -808,7 +807,7 @@ width="297mm">
    </path>
 <rect
    style="opacity:0.25878594;fill:#008bff;fill-opacity:1;stroke:#008bff;stroke-width:0.264999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;stroke-opacity:1"
-   id="water_in_cuvette" 
+   id="water_in_cuvette" onclick = "f7()"
    width="5.6427307"
    height="9.584137"
    x="221.41801"
@@ -861,7 +860,7 @@ width="297mm">
    </rect>
 <rect
    style="opacity:0.888179;fill:#eeaaff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
-   id="KMnO4_in_cuvette" display = "none" 
+   id="KMnO4_in_cuvette" display = "none" onclick = "f8()"
    width="5.4035492"
    height="9.5841389"
    x="229.82841"
@@ -1266,13 +1265,13 @@ begin="dial.click+3s"
 </g>
 </svg>
 
-
-<!-- <div id="bandage1"  style="height: 10px; width: 50px; margin-top: -500px; margin-left: 270px;position: absolute;"></div> -->
+<div id="chartContainer" onclick = "f9()" style="height: 120px; width: 260px; margin-top: -580px; margin-left: 270px;position: absolute;"></div>
+<div id="bandage1"  style="height: 10px; width: 50px; margin-top: -500px; margin-left: 270px;position: absolute;"></div> 
 
 <div id="chartContainer1" style="height: 18px; width: 64px; margin-top: -454px; margin-left: 70px;position: absolute; background-color: #fff;font-size: 12px; color: #000000;font-family:Arial, Helvetica, sans-serif;box-shadow: rgba(0, 0, 0, 0.7) 10px 20px 30px ;border-radius: 2px;text-align:justify;">Wavelength</div>
-<div id="chartContainer2" style="height: 18px; width: 64px; margin-top: -454px; margin-left: 138px;position: absolute; background-color: #fff;font-size: 12px ;color: #000000;font-family:Arial, Helvetica, sans-serif;box-shadow: rgba(0, 0, 0, 0.7) 10px 20px 30px ;border-radius: 2px;text-align:justify;">Absorbance</div>
-<div id="chartContainer3" style="height: 32px; width: 64px; margin-top: -440px; margin-left: 70px;position: absolute; background-color: rgb(243, 241, 123);font-size: 12px"></div>
-<div id="chartContainer4" style="height: 32px; width: 64px; margin-top: -440px; margin-left: 138px;position: absolute; background-color: #fff"></div>
+<div id="chartContainer1" style="height: 18px; width: 64px; margin-top: -454px; margin-left: 138px;position: absolute; background-color: #fff;font-size: 12px ;color: #000000;font-family:Arial, Helvetica, sans-serif;box-shadow: rgba(0, 0, 0, 0.7) 10px 20px 30px ;border-radius: 2px;text-align:justify;">Absorbance</div>
+<!--<div id="chartContainer3" style="height: 32px; width: 64px; margin-top: -440px; margin-left: 70px;position: absolute; background-color: rgb(243, 241, 123);font-size: 12px"></div>
+<div id="chartContainer4" style="height: 32px; width: 64px; margin-top: -440px; margin-left: 138px;position: absolute; background-color: #fff"></div>-->
       </div>
       <div style="padding-top: 150px; padding-left: 50px;">
          <div id = "svg2" onclick ="clock1()" style = "position:absolute; z-index: 0; padding-left: 200px; display:none; padding-left: 400px;">
