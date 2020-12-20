@@ -111,9 +111,7 @@ function f1()
 }
 
 function f2()
-{   
-    if(c==2)
-    {   
+{      
         document.getElementById("fun2").style.display="none";
         document.getElementById("KMnO4_in_beaker").style.display="block";
         if(current ==1)
@@ -153,12 +151,7 @@ function f2()
             document.getElementById("KMnO4_in_cuvette").style.fill= "#660066";
             document.getElementById("KMnO4_in_micro pipette").style.fill= "#660066";
         }
-    }
-    else
-    {
-        c--;
-        alert("You Clicked on the Wrong Apparatus, Please refresh to avoid potential glitches");
-    }
+    
 }
 function f3()
 {
