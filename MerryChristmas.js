@@ -116,6 +116,7 @@ function f1()
     else if(c==13)
     {
         c++;
+        document.getElementById("Santa").style.display="none";
         setTimeout(function(){      
             document.getElementById("fun13").style.display="none";
             document.getElementById("svg1").style.display="none";
@@ -129,6 +130,7 @@ function f1()
     }
     else if (c==15)
     {
+        document.getElementById("Santa").style.display="none";
         setTimeout(function(){      
             document.getElementById("fun15").style.display="none";
             document.getElementById("svg1").style.display="none";
@@ -387,6 +389,8 @@ document.getElementById("rect854").style.cursor="pointer";
     if(c==12)
     {
         document.getElementById("fun12").style.display="none";
+        document.getElementById("Santa").style.display = "block";
+        document.getElementById("Santa").innerHTML  = " λmax = 528 nm. Absorbtion increases with increase in Concentration";
         g2();
     }
     else if(c==22)
@@ -398,7 +402,7 @@ document.getElementById("rect854").style.cursor="pointer";
     }
     else if(c==14)
     {   
-        console.log(c);
+        document.getElementById("Santa").innerHTML  = "Beer's Law is verified";
         document.getElementById("fun14").style.display="none";
         g3();
     }
