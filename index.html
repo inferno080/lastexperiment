@@ -9,13 +9,13 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body style = "overflow: hidden; background-color: #63796c">
-      <div class="box">
+      <div class="box" >
          <select>
-            <option>0.0001 M</option>
-            <option>0.0002 M</option>
-            <option>0.0003 M</option>
-            <option>0.0004 M</option>
-            <option>0.0005 M</option>
+            <option id= "p1">0.001 M</option>
+            <option id = "p2">0.002 M</option>
+            <option id = "p3">0.003 M</option>
+            <option id = "p4">0.004 M</option>
+            <option if = "p5">0.005 M</option>
          </select>
       </div>
         <div class="slave" id="fun51">
@@ -148,36 +148,35 @@
        <div class="slave" id="fun11">
            <p><b>Click on the empty cuvette</b> to bring it down to the table</p>
        </div>
+         <!--First reading done-->
         <div class="slave" id="fun10">
-            <p><b>Click on the beaker</b> to change the concentration of the solution to 0.002M</p>
+         <p>The first reading is done. Click on the Spectrophotometer to place the cuvettes back on the shelf</p>
         </div>
-
-        <!--First reading done-->
         <div class="slave" id="fun9">
-            <p>The first reading is done. Click on the Spectrophotometer to place the cuvettes back on the shelf</p>
+         <p><b>Click on the knob on spectrophotometer</b> and start recording the values from the wavelength range 400-700 nm</p>
         </div>
         <div class="slave" id="fun8">
-            <p><b>Click on the knob on spectrophotometer</b> to set wavelength range (510-540 nm) and start recording the values</p>
+         <p><b>Click on the sample cuvette</b> to bring it to the Spectrophotometer</p>
         </div>
         <div class="slave" id="fun7">
-            <p><b>Click on the sample cuvette</b> to bring it to the Spectrophotometer</p>
+         <p><b>Click on the reference cuvette</b> placed on the shelf to bring it to the Spectrophotometer</p>
         </div>
         <div class="slave" id="fun6">
-            <p><b>Click on the reference cuvette</b> placed on the shelf to bring it to the Spectrophotometer</p>
+         <p><b>Click on the empty cuvette</b> to fill it with KMn0<sub>4</sub></p>
         </div>
        <div class="slave" id="fun5">
-           <p><b>Click on the empty cuvette</b> to fill it with KMn0<sub>4</sub></p>
+         <p><b>Click on the micro pipette</b> to fill it with KMnO<sub>4</sub></p>
        </div>
        <div class="slave" id="fun4">
-           <p><b>Click on the micro pipette</b> to fill it with KMnO<sub>4</sub></p>
+         <p><b>Click on the empty cuvette</b> to bring it down to the table</p>
        </div>
 
        <div class="slave" id="fun3">
-           <p><b>Click on the empty cuvette</b> to bring it down to the table</p>
+         <p><b>Click on the beaker </b>filled with 0.001M to bring it down to the table</p>
        </div>
    
        <div class="slave" id="fun2">
-          <p><b>Click on the beaker </b>filled with 0.001M to bring it down to the table</p>
+          <p><b>Select the desired Concentration from the Dropdown menu</b></p>
        </div>
        <div class="slave master" id = "fun1">
            <p><b>Click on the Spectrophotometer</b> to turn it ON and wait 30 minutes</p>
@@ -336,12 +335,13 @@ width="297mm">
    y="93.066788"
    x="25.738455"
    height="12.619843"
-   width="17.422318"
-   id="random"
+   width="17.422318" 
+   id="random" display="none"
    style="fill:#005522;stroke:#000000;stroke-width:0.18134;stroke-linejoin:round;paint-order:markers stroke fill" />
 <rect
    style="fill:#16502d;stroke:#000000;stroke-width:0.18134;stroke-linejoin:round;paint-order:markers stroke fill"
    id="rect918-1"
+   display="none"
    width="17.422318"
    height="12.619843"
    x="46.506794"
@@ -402,7 +402,7 @@ width="297mm">
    style="fill:none;stroke:#000000;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
 <rect
    style="opacity:0.2172524;fill:#33fff8;fill-opacity:1;stroke:#000000;stroke-width:0.291263;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;stroke-opacity:1"
-   id="cuvette1" onclick = "f6()"
+   id="cuvette1" 
    width="5.4035435"
    height="12.644682"
    x="221.6572"
@@ -460,7 +460,7 @@ width="297mm">
  
 <rect
    style="opacity:0.20127796;fill:#33fff8;fill-opacity:1;stroke:#000000;stroke-width:0.291263;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
-   id="cuvette2" onclick = "f3()"
+   id="cuvette2" 
    width="5.4035435"
    height="12.644682"
    x="229.82841"
@@ -492,7 +492,7 @@ width="297mm">
   
    <rect
    style="opacity:0.20127796;fill:#33fff8;fill-opacity:1;stroke:#000000;stroke-width:0.291263;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
-   id="cuvette3" onclick = "extra1()" display = "none"
+   id="cuvette3"  display = "none"
    width="5.4035435"
    height="12.644682"
    x="237.82841"
@@ -502,7 +502,7 @@ width="297mm">
    <!-- this is kmno4 cuvette on the table: it will go flying towards the spectrometer -->
    <rect
    style="opacity:0.20127796;fill:#33fff8;fill-opacity:1;stroke:#000000;stroke-width:0.291263;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
-   id="cuvette2_v2" onclick = "extra2()" display = "none"
+   id="cuvette2_v2" display = "none"
    width="5.4035435"
    height="12.644682"
    x="237.82841"
@@ -533,7 +533,7 @@ width="297mm">
 <path
    d="m 257.28256,12.135911 0.0285,0.05983 h -12.84102 c -0.22979,0 -0.41478,0.206896 -0.41478,0.463931 v 20.3801 c 0,0.257035 0.18499,0.464422 0.41478,0.464422 h 15.9537 c 0.22982,0 0.41523,-0.207387 0.41523,-0.464422 V 17.982126 l 3.11708,-5.594633 -3.32052,-0.125055 c -0.0621,-0.04137 -0.13398,-0.0667 -0.21179,-0.0667 h -1.55394 z"
    style="opacity:0.20447284;fill:#33fff8;fill-opacity:1;stroke:#000000;stroke-width:0.476747;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
-   id="beaker" onclick = "f2()">
+   id="beaker" >
 
    <animateTransform 
               attributeName="transform"
@@ -808,7 +808,7 @@ width="297mm">
    </path>
 <rect
    style="opacity:0.25878594;fill:#008bff;fill-opacity:1;stroke:#008bff;stroke-width:0.264999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;stroke-opacity:1"
-   id="water_in_cuvette" onclick = "f6()" 
+   id="water_in_cuvette" 
    width="5.6427307"
    height="9.584137"
    x="221.41801"
@@ -841,7 +841,7 @@ width="297mm">
 
    <rect
    style="opacity:0.25878594;fill:#008bff;fill-opacity:1;stroke:#008bff;stroke-width:0.264999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;stroke-opacity:1"
-   id="water_in_cuvette_v2" onclick = "f6()" display = "none"
+   id="water_in_cuvette_v2"  display = "none"
    width="5.6427307"
    height="9.584137"
    x="221.41801"
@@ -861,7 +861,7 @@ width="297mm">
    </rect>
 <rect
    style="opacity:0.888179;fill:#eeaaff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
-   id="KMnO4_in_cuvette" display = "none" onclick = "extra2(); f3()"
+   id="KMnO4_in_cuvette" display = "none" 
    width="5.4035492"
    height="9.5841389"
    x="229.82841"
@@ -904,7 +904,7 @@ width="297mm">
 
    <rect
    style="opacity:0.888179;fill:#eeaaff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
-   id="KMnO4_in_cuvette_v2" display = "none" onclick = "f3()"
+   id="KMnO4_in_cuvette_v2" display = "none"
    width="5.4035492"
    height="9.5841389"
    x="237.82841"
@@ -924,7 +924,7 @@ width="297mm">
 
    <rect
    style="opacity:0.888179;fill:#eeaaff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
-   id="KMnO4_in_cuvette_v2" display = "none" onclick = "extra2()"
+   id="KMnO4_in_cuvette_v2" display = "none" 
    width="5.4035492"
    height="9.5841389"
    x="237.82841"
@@ -946,7 +946,7 @@ width="297mm">
 
 <rect
    style="opacity:0.891374;fill:#eeaaff;fill-opacity:1;stroke:#000000;stroke-width:0.49893;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill"
-   id="KMnO4_in_beaker" onclick = "f2()"
+   id="KMnO4_in_beaker" 
    width="16.472015"
    height="11.638211"
    x="244.17088"
@@ -981,7 +981,7 @@ width="297mm">
    <path
    d="m 201.52101,3.475 v 1.3363528 h 4.00906 V 3.475 Z m 4.47156,4.2162802 v 0.434082 h 2.65979 v -0.434082 z m -4.25504,12.9087728 c -0.25776,0 -0.46509,0.20733 -0.46509,0.465088 v 0.675928 c 0,0.257757 0.20733,0.465088 0.46509,0.465088 h 0.30334 v 6.62285 c 0,0.25776 0.20733,0.465606 0.46509,0.465606 h 0.70435 c 0.25776,0 0.46561,-0.207846 0.46561,-0.465606 v -6.62285 h 1.09967 c 0.25775,0 0.4656,-0.207331 0.4656,-0.465088 v -0.675928 c 0,-0.257758 -0.20785,-0.465088 -0.4656,-0.465088 z"
    style="opacity:1;fill:#0097ff;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
-   id="micro pipette_grip" onclick = "f4()" >
+   id="micro pipette_grip" >
    <animateTransform 
    attributeName="transform"
    attributeType="XML"
@@ -1016,7 +1016,7 @@ begin="dial.click+3s"
 <path
    d="m 202.48309,29.289961 h 0.74168 v 0.548175 h -0.74168 z"
    style="opacity:0.897764;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.194194;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
-   id="blackbox"onclick = "f4()"  >
+   id="blackbox" >
    <animateTransform 
    attributeName="transform"
    attributeType="XML"
@@ -1052,7 +1052,7 @@ begin="dial.click+3s"
    sodipodi:nodetypes="cccccccccccccccccccc"
    d="m 202.7907,5.0113405 v 2.5393798 h 1.26969 V 5.0113405 Z m -1.99301,2.7062948 c -0.65989,4.3343687 -0.31609,8.6250997 0.0236,12.9160077 h 5.05602 c 0.30841,-4.189683 0.40171,-8.460031 0,-12.9160077 z m 5.21555,0.4666382 v 0.7353557 h 2.60966 V 8.1842735 Z m 2.22777,0.8046019 v 2.4685836 h 0.39016 V 8.9888754 Z"
    style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
-   id="micro pipette" onclick = "f4()">
+   id="micro pipette" >
 <animateTransform 
 attributeName="transform"
 attributeType="XML"
@@ -1087,7 +1087,7 @@ begin="dial.click+3s"
 <path
    d="m 201.50854,10.961308 h 0.8032 v 3.921502 h -0.8032 z"
    style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
-   id="blackbox2"onclick = "f4()"  >
+   id="blackbox2" >
    <animateTransform 
    attributeName="transform"
    attributeType="XML"
@@ -1125,7 +1125,7 @@ begin="dial.click+3s"
    d="m 202.86732,32.146096 -0.40195,-2.337489 0.78829,-2.02e-4 z"
    inkscape:transform-center-y="0.1098715"
    style="opacity:0.2172524;fill:#33fff8;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.079482;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
-   id="micro pipettetip" onclick = "f4()" >
+   id="micro pipettetip" >
    <animateTransform 
    attributeName="transform"
    attributeType="XML"
@@ -1158,7 +1158,7 @@ begin="dial.click+3s"
 /> 
 </path>
 <path
-   id="KMnO4_in_micro pipette" display = "none" onclick = "f4()"
+   id="KMnO4_in_micro pipette" display = "none" 
    style="opacity:0.84984026;fill:#eeaaffff;fill-opacity:1;fill-rule:nonzero;stroke:#eeaaffff;stroke-width:0.0794819;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
    inkscape:transform-center-y="0.1098715"
    d="m 202.86732,32.146096 -0.40195,-2.337489 0.78829,-2.02e-4 z"
@@ -1269,11 +1269,13 @@ begin="dial.click+3s"
 
 <!-- <div id="bandage1"  style="height: 10px; width: 50px; margin-top: -500px; margin-left: 270px;position: absolute;"></div> -->
 
-<div id="chartContainer1" style="height: 18px; width: 64px; margin-top: -454px; margin-left: 75px;position: absolute; background-color: #fff;font-size: 12px; color: #000000;font-family:Arial, Helvetica, sans-serif;box-shadow: rgba(0, 0, 0, 0.7) 10px 20px 30px ;border-radius: 2px;text-align:justify;">Wavelength</div>
-<div id="chartContainer2" style="height: 18px; width: 64px; margin-top: -454px; margin-left: 143px;position: absolute; background-color: #fff;font-size: 12px ;color: #000000;font-family:Arial, Helvetica, sans-serif;box-shadow: rgba(0, 0, 0, 0.7) 10px 20px 30px ;border-radius: 2px;text-align:justify;">Absorbance</div>
+<div id="chartContainer1" style="height: 18px; width: 64px; margin-top: -454px; margin-left: 70px;position: absolute; background-color: #fff;font-size: 12px; color: #000000;font-family:Arial, Helvetica, sans-serif;box-shadow: rgba(0, 0, 0, 0.7) 10px 20px 30px ;border-radius: 2px;text-align:justify;">Wavelength</div>
+<div id="chartContainer2" style="height: 18px; width: 64px; margin-top: -454px; margin-left: 138px;position: absolute; background-color: #fff;font-size: 12px ;color: #000000;font-family:Arial, Helvetica, sans-serif;box-shadow: rgba(0, 0, 0, 0.7) 10px 20px 30px ;border-radius: 2px;text-align:justify;">Absorbance</div>
+<div id="chartContainer3" style="height: 32px; width: 64px; margin-top: -440px; margin-left: 70px;position: absolute; background-color: rgb(243, 241, 123);font-size: 12px"></div>
+<div id="chartContainer4" style="height: 32px; width: 64px; margin-top: -440px; margin-left: 138px;position: absolute; background-color: #fff"></div>
       </div>
-      <div style="padding-top: 150px; padding-left: 50px;" id="svg2" display="none">
-         <div id = "Second" onclick ="clock1()" style = "position:absolute; z-index: 0; padding-left: 200px;  padding-left: 400px;">
+      <div style="padding-top: 150px; padding-left: 50px;">
+         <div id = "svg2" onclick ="clock1()" style = "position:absolute; z-index: 0; padding-left: 200px; display:none; padding-left: 400px;">
           <article class="clock">
              <div class="hours-container">
                <div class="hours"></div>

@@ -35,6 +35,15 @@ function f1()
                 document.getElementById("svg2").style.display="none";
         }, (5000))
 
+       /*  setTimeout((function(){
+            document.getElementById("Second").style.display ="none" 
+            document.getElementById("First").style.display ="block" 
+        }), (6000))
+        setTimeout((function(){
+            document.getElementById("First").style.display ="none" 
+            document.getElementById("Second").style.display ="block" 
+        }), (1000)) */
+
         
     }
     else if(c==51)
