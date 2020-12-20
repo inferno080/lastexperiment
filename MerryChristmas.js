@@ -358,7 +358,7 @@ function f9()
     {
         document.getElementById("fun12").style.display="none";
         document.getElementById("Santa").style.display = "block";
-        document.getElementById("Santa").innerHTML  = "   λmax = 528 nm. Absorbtion increases with increase in Concentration";
+        document.getElementById("Santa").innerHTML  = " λmax = 528 nm. Absorbtion increases with increase in Concentration";
         g2();
     }
     else if(c==22)
