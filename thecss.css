@@ -70,10 +70,10 @@
     
   }
   .hours-container {
-    animation: rotate1 5s infinite linear;
+    animation: rotate1 5s infinite;
   }
   .minutes-container {
-    animation: rotate2 5s infinite linear;
+    animation: rotate2 5s infinite ;
   }
   
   @keyframes rotate2 {
