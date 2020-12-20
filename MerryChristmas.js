@@ -11,6 +11,16 @@ var y1;
 var wavelength;
 var absorbance = 0;
 
+document.getElementById("beaker").style.display="block";
+document.getElementById("cuvette2").style.display="block";
+document.getElementById("water_in_cuvette").style.display="block";
+document.getElementById("rect854").style.display="block";
+document.getElementById("dial").style.display="block";
+
+function f0(){
+    document.getElementById("rect854").style.display="block";
+    document.getElementById("rect854").style.cursor="pointer";
+}
 
 window.test = function(e) 
 {
@@ -78,9 +88,11 @@ function f1()
 {   
     c++;
     if(c==1)
-    {
+    {   document.getElementById("rect854").style.cursor="default";
         document.getElementById("Green_LED").style.display= "block";
         document.getElementById("Red_LED").style.display= "none";
+        document.getElementById("beaker").style.display="block";   
+        document.getElementById("beaker").style.cursor="pointer"; 
         setTimeout(function(){      
             document.getElementById("fun1").style.display="none";
             document.getElementById("svg1").style.display="none";
@@ -136,7 +148,8 @@ function f1()
 
 function f2()
 {      
-        document.getElementById("fun2").style.display="none";
+    
+    document.getElementById("fun2").style.display="none";
         document.getElementById("KMnO4_in_beaker").style.display="block";
         if(current ==1)
         {
@@ -181,7 +194,9 @@ function f3()
 {
     c++
     if(c==3)
-    {   
+    {   document.getElementById("beaker").style.cursor="default";
+    document.getElementById("cuvette2").style.display="block";   
+    document.getElementById("cuvette2").style.cursor="pointer"
         document.getElementById("Grinch").style.display= "none";
         document.getElementById("fun3").style.display="none";
     }
@@ -200,7 +215,9 @@ function f4()
 {
     c++;
     if(c==4)
-    {
+    {  document.getElementById("micro pipette").style.display="block";
+    document.getElementById("micro pipette").style.cursor="pointer";
+    document.getElementById("cuvette2").style.cursor="default"
         document.getElementById("fun4").style.display="none";
         setTimeout(function(){
             document.getElementById("cuvette2").style.display="none";
@@ -226,7 +243,9 @@ function f5()
 {
     c++;
     if(c==5)
-    {
+    {   document.getElementById("micro pipette").style.cursor="default";
+    document.getElementById("cuvette3").style.display="block"; 
+    document.getElementById("cuvette3").style.cursor="pointer"; 
         document.getElementById("fun5").style.display="none";
         setTimeout(function(){
             document.getElementById("KMnO4_in_micro pipette").style.display="block";
@@ -250,7 +269,12 @@ function f6()
 {
     c++;
     if(c==6)
-    {
+    { document.getElementById("cuvette3").style.cursor="default";
+     
+    document.getElementById("cuvette1").style.display="block"; 
+    document.getElementById("cuvette1").style.cursor="pointer"; 
+    document.getElementById("water_in_cuvette").style.display="block"; 
+    document.getElementById("water_in_cuvette").style.cursor="pointer"; 
         document.getElementById("fun6").style.display="none";
         setTimeout(function(){
             document.getElementById("KMnO4_in_cuvette").style.display="block";
@@ -280,7 +304,12 @@ function f7()
 {   
     c++
     if(c==7)
-    {
+    {document.getElementById("cuvette1").style.cursor="default"; 
+    
+    document.getElementById("water_in_cuvette").style.cursor="default"; 
+     
+    document.getElementById("cuvette2_v2").style.display="block"; 
+    document.getElementById("cuvette2_v2").style.cursor="pointer"; 
         document.getElementById("fun7").style.display="none";
         setTimeout(function(){
             document.getElementById("cuvette1").style.display="none";
@@ -318,7 +347,9 @@ function f8()
 {
     c++
     if(c==8)
-    {
+    { document.getElementById("cuvette2_v2").style.cursor="dial"; 
+    document.getElementById("dial").style.display="block"; 
+    document.getElementById("dial").style.cursor="pointer"; 
         document.getElementById("fun8").style.display="none";
         setTimeout(function(){
             document.getElementById("cuvette2").style.display="none";
@@ -351,7 +382,8 @@ function f8()
 }
 
 function f9()
-{   
+{    document.getElementById("rect854").style.display="block";
+document.getElementById("rect854").style.cursor="pointer";   
     if(c==12)
     {
         document.getElementById("fun12").style.display="none";
@@ -371,7 +403,7 @@ function f9()
         g3();
     }
     else if(c==9 | c==11)
-    {     
+    {       
         document.getElementById("fun9").style.display="none";
         if(current ==1)
         {
@@ -737,7 +769,8 @@ function f9()
 
 function f10()
 {   
-        
+    
+    document.getElementById("rect854").style.cursor="default";   
     document.getElementById("close4").style.display="none";
     document.getElementById("close5").style.display="none";
     document.getElementById("close").style.display="none";
