@@ -364,12 +364,16 @@ function f9()
     else if(c==22)
     {
         document.getElementById("fun22").style.display="none";
+        document.getElementById("Santa").style.display = "block";
+        document.getElementById("Santa").style.display = "block";
+        document.getElementById("Santa").innerHTML  = "Unknown Concentration is 0.00425 M";
         document.getElementById("Pisplay1").innerHTML = "528";
-        document.getElementById("Pisplay2").innerHTML = "0.00425";
+        document.getElementById("Pisplay2").innerHTML = "0.5";
         //add red dot here
     }
     else if(c==14)
     {   
+        document.getElementById("Santa").style.display = "block";
         document.getElementById("Santa").innerHTML  = "Beer's Law is verified";
         document.getElementById("fun14").style.display="none";
         g3();
