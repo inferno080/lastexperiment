@@ -16,17 +16,18 @@
     box-shadow: 2px 2px 5px;
 }
 .popup1 {
-  height: 50px;
-  width: 350px;
+  height: 60px;
+  width: 400px;
   background-color: #aacef1;
   border-radius: 80px;
   margin-bottom: 30px;
   float: left;
   margin-right: 20px;
-  border-radius: 30px;
+  border-radius: 20px;
   margin-top: 300px; 
   margin-left: 585px;
   position: absolute;
+  font-size: 22px;
   box-shadow:  2px 3px rgb(22, 16, 16); 
   /* border-style: solid; */
 }
@@ -58,9 +59,10 @@
   margin-left: 100px;
   position: absolute;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 17px; color: #000000;
+  font-size: 28px; color: #000000;
   text-align:justify; 
   border-style: solid; 
+  font-weight: 700;
 
 }
 #svg4{
@@ -75,10 +77,10 @@
   margin-left: 100px;
   position: absolute;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 17px; color: #000000;
+  font-size: 28px; color: #000000;
   text-align:justify; 
   border-style: solid; 
-
+  font-weight: 700;
 }
 
   

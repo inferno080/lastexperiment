@@ -9,9 +9,10 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         <script src="https://kit.fontawesome.com/3a69774550.js" crossorigin="anonymous"></script>
     </head>
-    <body style = "overflow: hidden; background-color: #63796c">
-      <div class="box"  id = "Grinch" ><!--style="display:none"-->
+    <body style = "overflow: hidden; background-color: #63796c" onload="f0()">
+      <div class="box"  id = "Grinch" style="display: none;" ><!--style="display:none"-->
          <select onchange="test(this)";>
+            <option  value="1">Select the concentration</option>
           <option id= "p1" value="1">0.001 M</option>
           <option id = "p2" value="2">0.002 M</option> 
            <option id = "p3"value="3" >0.003 M</option> 
@@ -80,7 +81,7 @@
          <p>The first reading is done. Click on the Spectrophotometer to place the cuvettes back on the shelf</p>
         </div>
         <div class="slave" id="fun9">
-         <p><b>Click on the knob on spectrophotometer</b> and start recording the values from the wavelength range 400-700 nm</p>
+         <p><b>Click on the knob on spectrophotometer</b> and start recording the values.</p>
         </div>
         <div class="slave" id="fun8">
          <p><b>Click on the sample cuvette</b> to bring it to the Spectrophotometer</p>
